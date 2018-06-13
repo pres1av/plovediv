@@ -1,0 +1,301 @@
+
+
+// -----------------------------------------------------------------------------
+// module-fixed-header 
+// -----------------------------------------------------------------------------
+
+.responsive-960-plus {
+    #module-fixed-header {
+        position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $headingBackColor; margin: 0; 
+        	.container {
+        		height: $headerHeight;
+        		@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		height: 90px;
+            	}
+        	}
+        }
+        
+    }
+}
+
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header {
+        //position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $headingBackColor; margin: 0; 
+        	.container {
+        		height: $headerHeight;
+        		//@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		//height: 90px;
+            	}
+        	}
+        }
+        
+    }
+}
+
+#module-fixed-header-spacer {
+    height: $headerHeight;
+}
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header-spacer {
+        height: 0;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// module-fixed-header-overlay
+// -----------------------------------------------------------------------------
+
+
+
+.responsive-960-plus {
+    #module-fixed-header-overlay {
+        position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $headingBackColor; margin: 0; 
+        	.container {
+        		height: $headerHeight;
+        		@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		height: 90px;
+            	}
+        	}
+        }
+        
+    }
+}
+
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header-overlay {
+        //position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $headingBackColor; margin: 0; 
+        	.container {
+        		height: $headerHeight;
+        		//@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		//height: 90px;
+            	}
+        	}
+        }
+    }
+}
+
+
+// -----------------------------------------------------------------------------
+// module-static-header-overlay
+// -----------------------------------------------------------------------------
+
+
+#module-static-header-overlay {
+    position: absolute;
+    z-index: 200;   
+}
+
+
+// -----------------------------------------------------------------------------
+// module-slideshow-banner
+// -----------------------------------------------------------------------------
+
+#module-slideshow-banner { 
+	background-color: transparent; 
+	overflow: hidden;
+	.cycle-slide {
+		width: 100%; 
+		height: 100%; 
+		background-size: cover;
+		.container {
+			.cycle-overlay {
+				background-color: $slidesOverlayBackColor; 
+				color: $slidesOverlayTextColor; 
+				width: 300px; 
+				padding: 20px; 
+				position: absolute; 
+				top: 0; 
+				left: 15px;
+				h3 { color: $colorWhite; }
+				p { margin-bottom: 20px; }
+				a.link {
+					display:inline-block; 
+					line-height: $buttonLineHeight; 
+					background-color: $buttonBackColor; 
+					color: $buttonTextColor;  
+					padding: $buttonPadding; 
+					font-size: $buttonFontSize; 
+					text-transform: uppercase;
+					&:hover {
+						background-color: $buttonBackHoverColor; 
+						color: $buttonTextHoverColor;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+// -----------------------------------------------------------------------------
+// module-slideshow-banner-full-screen
+// -----------------------------------------------------------------------------
+
+#module-slideshow-banner-full-screen { 
+	background-color: transparent; 
+	overflow: hidden;
+	.cycle-slide {
+		width: 100%; 
+		height: 100%; 
+		background-size: cover;
+		background-position: center center;
+		.container {
+			.cycle-overlay {
+				background-color: $slidesOverlayBackColor; 
+				color: $slidesOverlayTextColor; 
+				width: 300px; 
+				padding: 20px; 
+				position: absolute; 
+				top: 0; 
+				left: 15px;
+				h3 { color: $colorWhite; }
+				p { margin-bottom: 20px; }
+				a.link {
+					display:inline-block; 
+					line-height: $buttonLineHeight; 
+					background-color: $buttonBackColor; 
+					color: $buttonTextColor;  
+					padding: $buttonPadding; 
+					font-size: $buttonFontSize; 
+					text-transform: uppercase;
+					&:hover {
+						background-color: $buttonBackHoverColor; 
+						color: $buttonTextHoverColor;
+					}
+				}
+			}
+			
+		}
+	}
+}
+#module-slideshow-banner-full-screen-scroller {
+    p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 30px;
+        font-size: 1.5em;
+        z-index: 150;
+        margin-bottom: 0;
+        a {
+            color: $colorWhite;
+        }
+    }
+}
+#module-slideshow-banner-full-screen-scroll-down-anchor {
+    position: absolute;
+    display: block;
+}
+
+// -----------------------------------------------------------------------------
+// module-slideshow-banner-full-screen
+// -----------------------------------------------------------------------------
+
+#module-menu-full {
+    background-color: $colorOffBlack;
+    height: 32px;
+    #top-menu {
+        top: 0;
+        bottom: auto;
+        z-index: 400;
+        position: static;
+        &.nav-menu ul {
+            display: table;
+            width: 100%;
+            li { 
+                display: table-cell;
+                float: none;
+                text-align: center;
+                &.current-menu-item a, 
+    		 	&.current-menu-item a,
+    		 	&.current-page-ancestor a {
+                    background-color: $colorWhite;
+                    color: $colorOffBlack;
+    		 	}
+    		 	a {
+                    color: $colorWhite;
+                    &:hover {
+                        background-color: $colorWhite;
+                        color: $colorOffBlack;
+                    }
+                    
+                }
+    			.sub-menu {
+        			width: auto;
+        			display: block;
+    				li {
+        				text-align: left;
+    					display: block;
+    				}
+    			}
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// module-form-section
+// -----------------------------------------------------------------------------
+
+
+#form-section {
+    background-color: $colorGrey;
+    .gravity-form {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+Responsive Classes Reference
+
+.responsive-960-plus
+.responsive-768-960
+.responsive-516-768
+.responsive-516-and-under
+    
+*/

@@ -1,0 +1,18 @@
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-reciprocal .jcarousel-next-horizontal {
+ 	background-image: url(carousel_next.gif);
+}
+
+.jcarousel-skin-reciprocal .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    background-image: url(carousel_prev.gif);
+}
+
+.jcarousel-skin-reciprocal .jcarousel-prev-horizontal {
+    background-image: url(carousel_prev.gif);
+}
+
+.jcarousel-skin-reciprocal .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    background-image: url(carousel_next.gif);
+}

@@ -1,0 +1,730 @@
+/* 
+.	Body & Container
+*/
+
+html,body {  overflow-x: hidden; }
+
+body { color: $mainTextColor; background-color: transparent; font-family: $mainFont; text-align: left; } 
+
+.display-none { display: none !important; }
+
+.relative { position: relative; }
+
+/* 
+.	Typography 
+*/
+
+/* main Text Settings */
+p, li, td  { font-size: $mainFontSize; line-height: $mainlineHeight; font-weight: $mainNormal; } 
+strong { font-weight: $mainBold; }
+em { font-style: italic; }
+p { margin-bottom: 15px; }
+ol, ul { margin: 0 0 15px 17px; }
+ol li { list-style-type: decimal; }
+ul li { list-style-type: disc; }
+h1,h2,h3,h4,h5,h6 { line-height: $headinglineHeight; }
+input[type='text'], button, textarea, input[type="submit"] { white-space: normal; box-sizing: content-box; border: 0px; line-height: 1em; padding: 0; margin: 0; font-weight: normal; font-family: inherit; display: block; background: transparent; }
+
+input[type='submit'], button { cursor: pointer; @include transition($buttonTransitions); }
+
+/* Links */
+a { 
+	color: $mainLinkColor; 
+	text-decoration: none; 
+	cursor: pointer; 
+	@include transition($buttonTransitions);
+	&:hover {
+		color: $mainLinkHover;
+	}
+} 
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/* Images */
+img { -ms-interpolation-mode: bicubic; }
+
+/* Headings */
+h1 { font-size: $h1FontSize; font-weight: $mainBold; margin-bottom: 20px; }
+h2 { font-size: $h2FontSize; font-weight: $mainBold; margin-bottom: 10px; }
+h3 { font-size: $h3FontSize; font-weight: $mainBold; margin-bottom: 10px; }
+h4 { font-size: $h4FontSize; font-weight: $mainBold; margin-bottom: 10px; }
+h5 { font-size: $h5FontSize; font-weight: $mainNormal; margin-bottom: 5px; }
+h6 { font-size: $h6FontSize; font-weight: $mainBold; margin-bottom: 5px; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { text-decoration: underline; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration: none; }
+
+/* Text Styles */
+p.intro { font-size: $introFontSize; line-height: $introlineHeight; font-weight: $mainNormal; } 
+
+/* Lists */
+ol li,
+ul li { margin: 0 0 10px; }
+ol li ol,
+ul li ul { margin: 5px 0 0 0; }
+ol li ol li,
+ul li ul li { font-size: 1em; margin-left: 15px; }
+ol li ol li ol,
+ul li ul li ul { margin: 0; }
+ol li ol li ol li,
+ul li ul li ul li { font-size: 1em; margin-bottom: 5px; margin-left: 30px; }
+
+/* Tables */
+table { border: 1px solid #ddd; border-right: 0; border-bottom: 0; margin-bottom: 20px; }
+table td { border: 1px solid #ddd; border-top: 0; border-left: 0; font-size: 1em; padding: 8px; }
+
+/* 
+.	Basic Layout 
+.	--------------------------------------------------------------------
+*/
+
+/* Rows and Columns */
+
+
+.page-section-back .row { 
+	width: auto; 
+	clear: both; 
+	margin: 0 auto; 
+	margin-left: -$columnMargin;
+
+	.column {
+		float: left; 
+		margin-left: $columnMargin;
+	}
+
+	.column-full { 
+		width: 100% - $columnMargin;
+	}
+
+	.column-main { 
+		width: $columnMainWidth;
+	}
+
+	.column-sidebar {
+		width: 	100% - $columnMainWidth - ($columnMargin * 2);
+	}
+
+
+	&.two-col {
+		.column-one{
+			width: (100% - ($columnMargin * 2)) / 2;
+		}
+	}
+
+	&.three-col {
+		.column-one{
+			width: (100% - ($columnMargin * 3)) /3;
+		}
+		.column-two{
+			width: ((100% - ($columnMargin * 3)) /3) * 2 + $columnMargin;
+		}
+
+	}
+
+	&.four-col {
+		.column-one {
+			width: (100% - ($columnMargin * 4)) /4;
+		}
+		.column-two {
+			width: ((100% - ($columnMargin * 4)) /4) * 2 + $columnMargin;
+		}
+		.column-three {
+			width: ((100% - ($columnMargin * 4)) /4) * 3 + ($columnMargin * 2);
+		}
+	}
+
+}
+
+/* Images */
+
+.main-loop-content img { max-width: 100%; height: auto; }
+
+img.alignnone { margin-bottom: 15px; }
+img.aligncenter { display: block; margin: 0 auto 15px; }
+img.alignright { float: right; clear: both; margin: 0px 0 15px 15px; }
+img.alignleft { float: left; clear: both; margin: 0px 15px 15px 0; }
+
+/* Buttons */
+div.btn { margin-bottom: 20px; }
+div.btn a { background-color: $colorOffBlack; color: $colorWhite; display: block; }
+div.btn a:hover { background-color: #777; }
+
+/* Panels */
+div.panel { background-color: #777; padding: 10px 10px 1px 10px; margin-bottom: 20px; }
+div.panel h1,
+div.panel h2,
+div.panel h3,
+div.panel h4,
+div.panel h5,
+div.panel h6 { color: $colorWhite; margin-bottom: 10px; }
+div.panel p { color: $colorWhite; margin-bottom: 10px; }
+div.panel a { color: $colorWhite; text-decoration: underline; }
+div.panel a:hover { color: $colorOffBlack; text-decoration: none; }
+
+/* Testimonials */
+div.testimonials { margin: 0 0 20px; }
+div.testimonials p.quote { background-image: url(images/quote-l.png); background-repeat: no-repeat; background-position: left top; font-size: 1.6em; line-height: 1.5em; font-weight: normal; padding: 20px 0 0 20px; }
+div.testimonials p.quote span { background-image: url(images/quote-r.png); background-position: right bottom; background-repeat: no-repeat; padding: 0 20px 20px 0; display: block; }
+div.testimonials p.citation { font-weight: bold; font-size: 1.3em; padding-left: 20px; margin-bottom: 0; }
+
+/* Gallery */
+div.gallery { margin-bottom: 24px; }
+div.gallery div.main-image { width: 496px; height: 300px; margin-bottom: 24px; }
+div.gallery div.main-image img { display: block; }
+div.gallery ul { margin: 0; }
+div.gallery ul li { float: left; width: 80px; height: 80px; margin: 0 24px 24px 0; list-style-type: none; }
+div.gallery ul li.last { margin-right: 0px; }
+div.gallery ul li a:hover { opacity: 0.8; }
+div.gallery ul li a.large-image-url-ref { display: none; }
+div.gallery ul li.end-of-row { margin-right: 0px; }
+
+
+/* 
+.	Nav Menus 
+.	--------------------------------------------------------------------
+*/
+
+.nav-menu {
+	ul {
+		list-style-type: none; 
+		margin: 0; 
+
+		li {
+			 list-style-type: none; 
+			 margin: 0; 
+			 position: relative;
+
+			a {
+				color: $navMenuTextColor; 
+				background-color: $navMenuBackgroundColor; 
+				display: block; 
+				padding: 5px 15px;
+				
+				&:hover { 
+					color: $navMenuTextColorHover; 
+					background-color: $navMenuBackgroundColorHover; 
+				}
+
+			}
+			 
+		 	&.current-menu-item a, 
+		 	&.current-menu-item a,
+		 	&.current-page-ancestor a {
+					color: $navMenuTextColorHover; background-color: $navMenuBackgroundColorHover;
+		 	}
+
+			.sub-menu {
+				 float: none; margin: 0px auto; position: absolute; left: -999em; text-align: left; border: 0px solid #ccc; background-color: $colorWhite; padding:0px; z-index: 1000;
+			}
+
+			&:hover .sub-menu {
+				left: 0; z-index: 1000;
+			}
+
+			.sub-menu {
+				li {
+					font-size: 1em; line-height: 1.5em; font-weight: normal; float: none; padding: 0; background-image: none; margin: 0; letter-spacing: 0; text-transform: none; clear: both; position: relative /* for IE7 z-index try putting this as static */;
+					a {
+						color: $navSubMenuTextColor; padding: 0; background-color: $navSubMenuBackgroundColor; white-space: nowrap; padding: 5px 15px;
+						&:hover {
+							color: $navSubMenuTextColorHover; background-color: $navSubMenuBackgroundColorHover;
+						}
+					}
+				}
+				.sub-menu {
+					position: absolute; top: 0; left: -999em;
+				}
+				&:hover .sub-menu {
+					left: 100%;
+				}
+			}
+		}
+
+
+	}
+
+
+}
+
+
+/* Horizontal Menu */
+.nav-menu-horiz {
+	ul {
+		li { float: left; font-size: $navFontSize; margin-right: 0; padding-right: 0; 
+			&.menu-item-last {
+ 				margin-right: 0px; padding-right: 0; background-image: none; 
+			}
+		}
+	} 
+}
+.nav-menu-horiz-right ul { float: right;  }
+
+/* Top Menu */
+#top-menu { position: absolute; bottom: 0; right: 0; }
+
+
+/* 
+.	Main Page Area 
+.	--------------------------------------------------------------------
+*/
+
+.page-section-back { 
+	width: 100%; margin: 0; 
+	&.margin-top { margin-top:$pageBackMargins; }
+	&.margin-bottom { margin-bottom:$pageBackMargins; }
+	&.padding-top { padding-top:$pageBackPaddings; }
+	&.padding-bottom { padding-bottom:$pageBackPaddings; }
+	.page-section {
+		width: $mainSiteWidth; margin: 0 auto; position: relative;
+		&.margin-top { margin-top:$pageMargins; }
+		&.margin-bottom { margin-bottom:$pageMargins; }
+		&.padding-top { padding-top:$pagePaddings; }
+		&.padding-bottom { padding-bottom:$pagePaddings; }
+	}
+}
+
+.section { 
+	width: 100%; margin: 0; 
+	&.margin-top { margin-top:$pageBackMargins; }
+	&.margin-bottom { margin-bottom:$pageBackMargins; }
+	&.padding-top { padding-top:$pageBackPaddings; }
+	&.padding-bottom { padding-bottom:$pageBackPaddings; }
+	.container {
+		position: relative;
+		&.margin-top { margin-top:$pageMargins; }
+		&.margin-bottom { margin-bottom:$pageMargins; }
+		&.padding-top { padding-top:$pagePaddings; }
+		&.padding-bottom { padding-bottom:$pagePaddings; }
+	}
+}
+
+/* 
+.	Header 
+.	--------------------------------------------------------------------
+*/
+
+.page-section-back.header { 
+	background-color: $headingBackColor; margin: 0; 
+	.page-section {
+		height: $headerHeight;
+	}
+}
+
+.section.header {
+	background-color: $headingBackColor; margin: 0; 
+	.container {
+		height: $headerHeight;
+	}
+}
+
+/* Logo */
+#logo { position: absolute; top: 0; left: 15px;
+	img { display: block;  }
+}
+
+/* Contact */
+#contact { 
+	position: absolute; top: 0px; right: 15px; 
+	p { text-align: right; margin: 0; } 
+}
+
+
+/* 
+.	Slider 
+. 	--------------------------------------------------------------------
+*/
+
+#dummy { width: 100%; display: block; min-height:  240px; }
+
+#slideshow { 
+	background-color: transparent; 
+	overflow: hidden;
+	.cycle-slide {
+		width: 100%; 
+		height: 100%; 
+		background-size: cover;
+		.container {
+			.cycle-overlay {
+				background-color: $slidesOverlayBackColor; 
+				color: $slidesOverlayTextColor; 
+				width: 300px; 
+				padding: 20px; 
+				position: absolute; 
+				top: 0; 
+				left: 15px;
+				h3 { color: $colorWhite; }
+				p { margin-bottom: 20px; }
+				a.link {
+					display:inline-block; 
+					line-height: $buttonLineHeight; 
+					background-color: $buttonBackColor; 
+					color: $buttonTextColor;  
+					padding: $buttonPadding; 
+					font-size: $buttonFontSize; 
+					text-transform: uppercase;
+					&:hover {
+						background-color: $buttonBackHoverColor; 
+						color: $buttonTextHoverColor;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+/* 
+.	Parallax Banner 
+. 	--------------------------------------------------------------------
+*/
+
+#moving-banner { min-height: 400px; }
+
+/* 
+.	Scrolling Logos 
+.	--------------------------------------------------------------------
+*/
+
+#scrolling-logos {
+	margin: 0 -15px;
+	#scrolling-logos-inner {
+		div {
+			img { display: block; margin: 0 auto; }
+		}
+	}
+}
+
+#scrolling-logos {
+	position: relative;
+	#scrolling-logos-inner { 
+		position: relative; 
+		.slick-slide {
+			/*width: 216px !important; 
+			height: 65px; 
+			margin-right: 32px; */
+			vertical-align: top;
+			padding: 0 15px;
+			img {
+				display: block;
+			}
+		}
+	}
+	.prev-next {
+		display: block; 
+		position: absolute; 
+		top: 18px; 
+		width: 30px; 
+		height: 30px;
+		&:hover {
+			background-position: center bottom;
+		}
+	}	
+	#prev {
+		background-image: url(images/prev.png); 
+		left: -30px;
+	}
+	#next {
+		background-image: url(images/next.png); 
+		right: -30px;		
+	}
+}
+
+
+
+/* 
+.	Gravity Form 
+.	--------------------------------------------------------------------
+*/
+
+.gravity-form { 
+	background-color: $colorOffBlack; 
+	padding: 20px; 
+	h3 {
+		color: $colorWhite;
+	}
+	ul {
+		margin: 0px;
+		li {
+			list-style: none; 
+			margin: 0 0 20px 0;
+		}
+	}
+	input,
+	textarea {
+		display: block; 
+		width: 100%; 
+		font-size: 1em; 
+		line-height: 1.5em;
+	}
+	textarea {
+		height: 100px;
+	}
+	div.ginput_container {
+		padding: 5px; 
+		background-color: $colorWhite;
+		&.ginput_container_select {
+            padding: 0;
+    		select {
+        		-webkit-appearance: none; 
+        		-moz-appearance: none; 
+        		white-space: normal; 
+        		box-sizing: content-box; 
+        		border: 0px; 
+        		padding: 0; 
+        		margin: 0; 
+        		font-weight: $mainNormal; 
+        		font-family: inherit; 
+        		display: block; 
+        		background: transparent;
+        		@include border-radius(0);
+        		width: 100%;
+        		cursor: pointer;
+        		padding: 5px;
+        		line-height: 1.5em;
+        		background-image: url(images/drop-down.png);
+        		background-position: right center;
+        		background-repeat: no-repeat;
+        		background-size: 30px auto;
+        		box-sizing: border-box;
+        		height: 32px;
+    		}
+		}
+		&.ginput_container_fileupload {
+    		padding: 0;
+    		background-color: transparent;
+    		color: $colorWhite; 
+    		position: relative;
+    		input {
+        		/*font-size: 1.5em;*/
+    		}
+    		/*input {
+        		opacity: 0;
+    		}
+    		&:after {
+        		@include button-style();
+        		content: 'Choose File';
+        		font-size: 1em;
+        		position: absolute;
+        		top: 0;
+        		pointer-events: none;
+    		}
+    		&:hover {
+        		&:after {
+            		
+        		}
+    		}
+    		/*input[type='file'] {
+        		@include button-style();
+    		}*/
+		}
+		&.ginput_container_radio {
+    		padding: 0;
+    		padding-top: 5px;
+    		background-color: transparent;
+    		li {
+        		margin-bottom: 5px;
+        		input {
+            		width: auto;
+            		display: inline;
+            		margin-right: 10px;
+        		}
+    		}
+		}
+		&.ginput_container_checkbox {
+    		padding: 0;
+    		padding-top: 5px;
+    		background-color: transparent;
+    		li {
+        		margin-bottom: 5px;
+        		input {
+            		width: auto;
+            		display: inline;
+            		margin-right: 10px;
+        		}
+    		}
+		}
+	}
+	p,
+	label { color: $colorWhite; }
+	input[type="submit"] {
+		display: inline-block; 
+		padding: $buttonPadding; 
+		width: auto; 
+		float: left; 
+		font-size: $buttonFontSize; 
+		text-transform: uppercase; 
+		background-color: $buttonBackColor; 
+		color: $buttonTextColor; 
+		line-height: $buttonLineHeight;
+		&:hover {
+			background-color: $buttonBackHoverColor; 
+			color:  $buttonTextHoverColor;
+		}
+	}
+	.validation_error { font-size: $mainFontSize; line-height: $mainlineHeight; margin-bottom: 20px; color: red; }
+	.validation_message { color: red; }
+	::-webkit-input-placeholder { color: $colorOffBlack; }
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: $colorOffBlack; opacity: 1; line-height: normal; }
+	::-moz-placeholder { /* Mozilla Firefox 19+ */ color: $colorOffBlack; opacity: 1; line-height: normal; }
+	:-ms-input-placeholder { /* Internet Explorer 10+ */ color: $colorOffBlack; line-height: normal; }
+	
+    .gf-left {
+        float: left;
+        box-sizing: border-box;
+        padding-right: 10px;
+        width: 50%;
+    }
+    .gf-right {
+        float: right;
+        box-sizing: border-box;
+        padding-left: 10px;
+        width: 50%;
+    }
+	
+}
+#ui-datepicker-div {
+    background-color: $colorWhite;
+    .ui-datepicker-header {
+        padding: 5px;
+        .ui-corner-all {
+            @include button-style();
+            padding: 5px 10px;
+            font-size: 1.3em;
+            background-color: $colorOffBlack;
+            color: $colorWhite;
+            margin-bottom: 5px;
+            &:hover {
+                background-color: $colorWhite;
+                color: $colorOffBlack;
+            }
+            &.ui-datepicker-next {
+                float: right;
+            }
+        }
+        .ui-datepicker-title {
+            text-align: right;
+            select {
+                margin-left: 5px;
+            }
+        }
+    }
+    table {
+        thead {
+            th {
+                border-bottom: 1px solid #ddd;
+                font-size: 1.3em;
+                padding: 5px;
+            }
+        }
+        tbody {
+            td {
+                font-size: 1.3em;
+                cursor: pointer;
+                &:hover {
+                    background-color: $colorOffBlack;
+                    a {
+                        color: $colorWhite;
+                    }
+                }
+                a {
+                    color: $colorOffBlack;
+                }
+            }
+        }
+    }
+}
+
+/* Posts */
+
+h1.posts-section-title { font-size: 4em; font-weight: normal; margin-bottom: 30px; }
+
+/* Posts: Sidebar */
+div.panel-post-list { }
+div.panel-post-list h2 { font-size: 2.6em; }
+div.post-snippet { padding-bottom: 15px; border-bottom: 1px solid $colorWhite; margin-bottom: 15px; }
+div.post-snippet.last { border-bottom: 0; margin-bottom: 0; }
+div.post-snippet h3 { font-size: 1.8em; margin-bottom: 3px; }
+div.post-snippet p { margin-bottom: 0; }
+div.post-snippet p a.read-more { white-space: nowrap; }
+
+/* Posts: Index & Archive Listings */
+div.post-listing { padding-bottom: 25px; border-bottom: 1px solid #777; margin-bottom: 25px; }
+div.post-listing.last { border-bottom: 0; margin-bottom: 0; }
+div.post-listing p { margin-bottom: 0; }
+div.post-listing p a.read-more { white-space: nowrap; }
+
+/* Posts: Single */
+div.post-full div.featured-image { border: 1px solid; padding: 10px; margin-bottom: 20px; }
+div.post-full div.featured-image img,
+div.post-full div.featured-image-left img,
+div.post-full div.featured-image-right img { margin: 0; }
+div.post-full div.featured-image-left { float: left; margin: 0 15px 15px 0; }
+div.post-full div.featured-image-right { float: right; margin: 0 0 15px 15px; } 
+
+
+/* Posts: Navigation */
+div.navigation { margin-bottom: 20px; }
+div.navigation .nav-btn { font-size: 1.3em; font-weight: bold; text-transform: uppercase; }
+div.navigation .nav-btn-next { width: 200px; float: right; text-align: right; }
+div.navigation .nav-btn-prev { width: 200px; float: left; }
+
+
+
+/* 
+	 Footer 
+ 	 --------------------------------------------------------------------
+*/
+
+.footer { 
+	background-color: $footerBack; 
+	margin: 0; 
+	padding: $footerPadding; 
+	.container { 
+		ul { margin: 0; }
+		li { list-style: none; margin: 0;
+			ul li { margin-left: 20px; }
+		}
+		p, li { 
+			color: $footerTextColor; text-align: left; line-height: $footerLineHeight;
+			a { 
+				color: $footerLinkColor; 
+				&:hover { color: $footerHoverColor; }
+			}
+			span { color: $footerSpanColor; }
+		}
+		
+	}
+}
+
+
+/* 
+	 Miscellaneous 
+ 	 --------------------------------------------------------------------
+*/
+
+/* Error Messages */
+div.error-message { background-color: $colorWhite; border: 4px solid red; padding: 10px; margin-bottom: 20px; }
+div.error-message h1 { color: red; }
+div.error-message a { color: red; }
+div.error-message a:hover { color: black; }
+
+/* Clearfix */
+.group:before,
+.group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+
+/* 
+	 Infinite AJAX 
+ 	 --------------------------------------------------------------------
+*/
+
+#target {
+    position: fixed;
+}
+
+
+
+
