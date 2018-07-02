@@ -1,0 +1,204 @@
+/*
+Theme Name: The Pad Default Template
+Theme URI: http://www.padcreative.co.uk/
+Description: The Pad Default theme for WordPress.
+Author: Pad Creative Ltd
+Version: 5.04
+*/
+
+/*
+.                                  .MMM
+.                                  .MMM
+.                                  .MMM
+.                                  .MMM
+. ,MMMMMMMM .  MMMMMMMMM    MMMMMMMMMMM
+.MMMMMMMMMMMM.MMMMMMMMMMM.MMMMMMMMMMMMM
+MMMM    .8MMMMMMM    .MMMMMMM?    .MMMM
+MMM      .MMMMMM      .MMMMMM.     ~MMM
+MMM.      MMMMMM.      MMMMMM.    .7MMM.
+MMMM.   .MMMMMMMM    .MMMMMMMM.  .+MMMM.
+MMMMMMMMMMMMO.MMMMMMMMMMMMMMMMMMMMMMMM.
+MMMMMMMMMMM.. .+MMMMMM MMM. MMMMMMMM.
+MMM
+MMM
+MMM               Pad Creative - design
+MMM               www.padcreative.co.uk
+
+*/
+
+
+//
+// VARIABLES START -----------------------------------------------------------------------------
+//
+
+	//Site Specific Variables
+	
+		//colors
+		$colorWhite: #fff;
+		$colorOffBlack: #222;
+		$colorGrey: #5d5a5a;
+		
+		
+		
+		
+				
+
+	//General Styles
+
+
+		//Responsive Breakpoints		
+		$breakWide: 1280px;
+		$breakDesktop: 960px;
+		$breakTablet: 768px;
+		$breakPhoneLarge: 516px;
+		$breakPhoneSmall: 320px;
+	
+
+		//Text
+		$mainTextColor: $colorOffBlack;
+		$mainLinkColor: red;
+		$mainLinkHover: blue;
+		
+		$mainFontSize: 1.5em;
+		$mainlineHeight: 1.5em;
+		
+		$mainFont: Helvetica, Arial, sans-serif;
+		$headingFont: Helvetica, Arial, sans-serif;
+		
+		$headinglineHeight: 1.2em;
+		$h1FontSize: 3em;
+		$h2FontSize: 2.4em;
+		$h3FontSize: 2em;
+		$h4FontSize: 1.8em;
+		$h5FontSize: 1.5em;
+		$h6FontSize: 1.5em;
+
+		$introFontSize: 2em;
+		$introlineHeight: 1.5em;
+		
+		$mainBold: 700;
+		$mainNormal: 400;
+		
+	//Header
+	
+		$headerHeight: 120px;
+	
+		//Navigation
+		$navMenuTextColor: $colorOffBlack;
+		$navMenuBackgroundColor: transparent;
+		
+		$navFontSize: 1.5em;
+
+		$navMenuTextColorActive: $colorWhite;
+		$navMenuBackgroundColorActive: $colorOffBlack;
+
+		$navMenuTextColorHover: $colorWhite;
+		$navMenuBackgroundColorHover: $colorOffBlack;
+
+			//Sub Menus
+			$navSubMenuTextColor: $colorWhite;
+			$navSubMenuBackgroundColor: $colorOffBlack;
+			$navSubMenuTextColorHover: $colorOffBlack;
+			$navSubMenuBackgroundColorHover: $colorWhite;
+		
+		//Header
+		$headingBackColor: rgba(255, 255, 255, 0.9);
+		
+	//Footer
+	
+		$footerBack: $colorOffBlack;
+		$footerPadding: 30px 0;
+		
+		$footerTextColor: $colorWhite;
+		$footerLineHeight: 1.8em;
+		
+		$footerLinkColor: $colorWhite;
+		$footerHoverColor: $colorWhite;
+		
+		$footerSpanColor: $colorWhite;
+		
+	//Slideshow
+	
+		$slidesOverlayTextColor: $colorWhite;
+		$slidesOverlayBackColor: $colorOffBlack;
+	
+	
+	//Buttons
+
+		$buttonTransitions: background-color 0.2s, color 0.2s, opacity 0.2s;
+		
+		$buttonTextColor: $colorOffBlack;
+		$buttonBackColor: $colorWhite;
+		
+		$buttonTextHoverColor: $colorWhite;
+		$buttonBackHoverColor: $colorOffBlack;
+		
+		$buttonPadding: 7px 30px;
+		$buttonFontSize: 1.5em;
+		$buttonLineHeight: 1.3em;
+
+	//Rows and Columns
+
+		$mainSiteWidth: $breakWide;
+		$columnMarginPixels: 30px;
+
+		//This is only used if the main column is outside the usual layout otherwise use row.three-col/row.two-col column-sizing in the markup.
+		$columnMainWidthPixels: 630px;
+		
+		$columnMargin: $columnMarginPixels / $mainSiteWidth * 100%;
+		$columnMainWidth: ($columnMainWidthPixels / $mainSiteWidth * 100%) - $columnMargin;
+
+	//Layouts
+		//for .page-section-back
+		$pageBackMargins: 30px;
+		$pageBackPaddings: 30px;
+
+		//for .page-section
+		$pageMargins: 30px;
+		$pagePaddings: 30px;
+		
+
+
+
+//
+// VARIABLES END -----------------------------------------------------------------------------
+//
+
+@import 'scss/bootstrap-grid';
+
+@import 'scss/mixins';
+
+@import 'scss/reset';
+
+@import 'scss/default-stylings';
+
+@import 'scss/addons';
+
+@import 'scss/modules';
+
+
+/* 
+---
+------
+.  ------
+---   ------		
+.  ---	 ----------------------------------------------------------
+---	  --- Site-specific Elements ----------------------------------------
+.  --- 	 ----------------------------------------------------------
+---   ------
+.  ------
+------
+---
+*/
+
+/* 
+.	Home
+.	--------------------------------------------------------------------
+*/
+
+
+//
+// EXTRA INCLUDES -----------------------------------------------------------------------------
+//
+
+@import 'scss/responsive';

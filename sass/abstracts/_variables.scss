@@ -1,0 +1,152 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Default font family
+/// @type List
+$default-font: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+	
+/// General colors
+/// @type Color
+$color-white: #fff;
+$color-black: #000;
+$color-off-black: #222;
+$color-grey: #5d5a5a;
+
+
+//Text
+$text-color: $color-off-black;
+$main-link-color: red;
+$main-link-hover: blue;
+		
+		$mainFontSize: 1.5em;
+		$mainlineHeight: 1.5em;
+		
+		$mainFont: Helvetica, Arial, sans-serif;
+		$headingFont: Helvetica, Arial, sans-serif;
+		
+		$headinglineHeight: 1.2rem;
+		$h1FontSize: 3rem;
+		$h2FontSize: 2.4rem;
+		$h3FontSize: 2rem;
+		$h4FontSize: 1.8rem;
+		$h5FontSize: 1.5rem;
+		$h6FontSize: 1.5rem;
+
+		$introFontSize: 2rem;
+		$introlineHeight: 1.5rem;
+		
+		$mainBold: 700;
+		$mainNormal: 400;
+		
+	//Header
+	
+		$headerHeight: 12rem;
+	
+		//Navigation
+		$navMenuTextColor: $color-off-black;
+		$navMenuBackgroundColor: transparent;
+		
+		$navFontSize: 1.5rem;
+
+		$navMenuTextColorActive: $color-white;
+		$navMenuBackgroundColorActive: $color-off-black;
+
+		$navMenuTextColorHover: $color-white;
+		$navMenuBackgroundColorHover: $color-off-black;
+
+			//Sub Menus
+			$navSubMenuTextColor: $color-white;
+			$navSubMenuBackgroundColor: $color-off-black;
+			$navSubMenuTextColorHover: $color-off-black;
+			$navSubMenuBackgroundColorHover: $color-white;
+		
+		//Header
+		$headingBackColor: rgba(255, 255, 255, 0.9);
+		
+	//Footer
+	
+		$footerBack: $color-off-black;
+		$footerPadding: 3rem 0;
+		
+		$footerTextColor: $color-white;
+		$footerLineHeight: 1.8rem;
+		
+		$footerLinkColor: $color-white;
+		$footerHoverColor: $color-white;
+		
+		$footerSpanColor: $color-white;
+		
+	//Slideshow
+	
+		$slidesOverlayTextColor: $color-white;
+		$slidesOverlayBackColor: $color-off-black;
+	
+	
+	//Buttons
+
+		$buttonTransitions: background-color 0.2s, color 0.2s, opacity 0.2s;
+		
+		$buttonTextColor: $color-off-black;
+		$buttonBackColor: $color-white;
+		
+		$buttonTextHoverColor: $color-white;
+		$buttonBackHoverColor: $color-off-black;
+		
+		$buttonPadding: 7px 3rem;
+		$buttonFontSize: 1.5rem;
+		$buttonLineHeight: 1.3rem;
+		
+		
+/// Container's maximum width
+/// @type Length
+$grid-width: 118rem !default;
+
+
+
+	//Rows and Columns
+
+		$columnMarginPixels: 3rem;
+
+		//This is only used if the main column is outside the usual layout otherwise use row.three-col/row.two-col column-sizing in the markup.
+		$columnMainWidthPixels: 63rem;
+		
+		$columnMargin: $columnMarginPixels / $grid-width * 100%;
+		$columnMainWidth: ($columnMainWidthPixels / $grid-width * 100%) - $columnMargin;
+
+	//Layouts
+		//for .page-section-back
+		$pageBackMargins: 3rem;
+		$pageBackPaddings: 3rem;
+
+		//for .page-section
+		$pageMargins: 3rem;
+		$pagePaddings: 3rem;
+
+
+
+
+
+
+/// Responsive Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in em
+$breakpoints: (
+	'small': 25em,					//400px
+	'phone': 37.5em,				//600px
+	'tablet-portrait': 56.25em,		//900px
+	'tablet-landscape': 75em, 		//1200px
+	'desktop': 100em,				//1600px
+	'big-desktop': 112.5em, 		//1800px
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
