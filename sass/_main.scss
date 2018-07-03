@@ -12,7 +12,10 @@
 
 // 2. Vendors
 @import
-	'vendor/normalize';
+	'vendor/bootstrap-grid',
+	'vendor/normalize',
+	'vendor/jquery-lightbox';
+	
 
 // 3. Base stuff
 @import
@@ -23,13 +26,24 @@
 	'base/utilities';
 
 // 4. Layout-related sections
-//@import
-//	'layout/header',
-//	'layout/footer';
+@import
+	'layout/header',
+	'layout/footer',
+	'layout/fixed-header',
+	'layout/static-header',
+	'layout/slideshow-banner',
+	'layout/menu-full',
+	'layout/form-section';
 
 // 5. Components
-//@import
-//	'components/button';
+@import
+	'components/responsive-bar',
+	'components/responsive-menu',
+	'components/nav-menus',
+	'components/slider',
+	'components/scrolling-logos',
+	'components/gravity-form',
+	'components/cookie-banner';
 
 // 6. Page-specific styles
 //@import

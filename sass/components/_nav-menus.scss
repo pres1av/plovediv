@@ -1,0 +1,122 @@
+/* 
+.	Nav Menus 
+.	--------------------------------------------------------------------
+*/
+
+.nav-menu {
+	ul {
+		list-style-type: none; 
+		margin: 0; 
+
+		li {
+			 list-style-type: none; 
+			 margin: 0; 
+			 position: relative;
+
+			a {
+				color: $nav-menu-text-color; 
+				background-color: $nav-menu-background-color; 
+				display: block; 
+				padding: .5rem 1.5rem;
+				
+				@include on-event { 
+					color: $nav-menu-text-color-hover; 
+					background-color: $nav-menu-background-color-hover; 
+				}
+
+			}
+			 
+			&.current-menu-item a, 
+			&.current-menu-item a,
+			&.current-page-ancestor a {
+					color: $nav-menu-text-color-hover;
+					background-color: $nav-menu-background-color-hover;
+			}
+
+			.sub-menu {
+				 float: none;
+				 margin: 0px auto;
+				 position: absolute;
+				 left: -999em;
+				 text-align: left;
+				 border: 0 solid #ccc;
+				 background-color: $color-white;
+				 padding: 0;
+				 z-index: 1000;
+			}
+
+			&:hover .sub-menu {
+				left: 0;
+				z-index: 1000;
+			}
+
+			.sub-menu {
+				li {
+					font-size: 1rem;
+					line-height: 1.5em;
+					font-weight: normal;
+					float: none;
+					padding: 0;
+					background-image: none;
+					margin: 0;
+					letter-spacing: 0;
+					text-transform: none;
+					clear: both;
+					position: relative;
+					
+					a {
+						color: $nav-sub-menu-text-color;
+						padding: 0;
+						background-color: $nav-sub-menu-background-color;
+						white-space: nowrap;
+						padding: .5rem 1.5rem;
+						&:hover {
+							color: $nav-sub-menu-text-color-hover;
+							background-color: $nav-sub-menu-background-color-hover;
+						}
+					}
+				}
+				
+				.sub-menu {
+					position: absolute;
+					top: 0;
+					left: -999em;
+				}
+				
+				&:hover .sub-menu {
+					left: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+/* Horizontal Menu */
+.nav-menu-horiz {
+	ul {
+		li { 
+			float: left;
+			font-size: $nav-font-size;
+			margin-right: 0;
+			padding-right: 0; 
+			
+			&.menu-item-last {
+ 				margin-right: 0px;
+ 				padding-right: 0;
+ 				background-image: none; 
+			}
+		}
+	} 
+}
+
+.nav-menu-horiz-right ul {
+	float: right;
+}
+
+/* Top Menu */
+#top-menu {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

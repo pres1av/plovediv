@@ -3,30 +3,6 @@
 // -----------------------------------------------------------------------------
 
 /**
- * Set up a decent box model on the root element
- */
-html {
-	box-sizing: border-box;
-	
-    // This defines what 1rem is
-    font-size: 75%; 							//1 rem = 12px;
-    
-    @include responsive(desktop) {
-        font-size: 62.5%; 						//1rem = 10px < 1600px
-    }
-
-    @include responsive(tablet-landscape) { 
-        font-size: 56.25%; 						//1 rem = 9px < 1200px
-    }
-
-    @include responsive(tablet-portrait) { 
-        font-size: 50%; 						//1 rem = 8px, < 900px
-    }
-    
-    
-}
-
-/**
  * Make all elements from the DOM inherit from the parent box-sizing
  * Since `*` has a specificity of 0, it does not override the `html` value
  * making all elements inheriting from the root box-sizing value
@@ -48,14 +24,184 @@ html {
 }
 
 /**
- * Basic styles for links
+ * Set up a decent box model on the root element
  */
-a {
-	color: $main-link-color;
-	text-decoration: none;
+html {
+	box-sizing: border-box;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	
+    // This defines what 1rem is
+    font-size: 75%; 							//1 rem = 12px;
+    
+    @include responsive(desktop) {
+        font-size: 62.5%; 						//1rem = 10px < 1600px
+    }
 
-	@include on-event {
-    	color: $text-color;
-		text-decoration: underline;
+    @include responsive(tablet-landscape) { 
+        font-size: 56.25%; 						//1 rem = 9px < 1200px
+    }
+
+    @include responsive(tablet-portrait) { 
+        font-size: 50%; 						//1 rem = 8px, < 900px
+    }
+}
+
+body {
+	background-color: transparent;
+}
+
+html, body { 
+	overflow-x: hidden;
+	
+	&.scroll {
+		overflow: hidden; 
+		height: 100%;
 	}
 }
+
+/// Links
+a { 
+	color: $main-link-color; 
+	text-decoration: none; 
+	cursor: pointer; 
+	@include transition($button-transitions);
+	
+	@include on-event {
+    	color: $main-link-hover;
+		text-decoration: none;
+	}
+}
+
+
+/// Old Styles for inspecting
+
+	/* Lists */
+	ol li,
+	ul li { margin: 0 0 1rem; }
+	ol li ol,
+	ul li ul { margin: .5rem 0 0 0; }
+	ol li ol li,
+	ul li ul li { font-size: 1rem; margin-left: 1.5rem; }
+	ol li ol li ol,
+	ul li ul li ul { margin: 0; }
+	ol li ol li ol li,
+	ul li ul li ul li { font-size: 1rem; margin-bottom: .5rem; margin-left: 3rem; }
+	
+	/* Tables */
+	table { border: 1px solid #ddd; border-right: 0; border-bottom: 0; margin-bottom: 2rem; }
+	table td { border: 1px solid #ddd; border-top: 0; border-left: 0; font-size: 1rem; padding: .8rem; }
+	
+	/* Images */
+	
+	.main-loop-content img { max-width: 100%; height: auto; }
+	
+	img.alignnone { margin-bottom: 1.5rem; }
+	img.aligncenter { display: block; margin: 0 auto 1.5rem; }
+	img.alignright { float: right; clear: both; margin: 0 0 1.5rem 1.5rem; }
+	img.alignleft { float: left; clear: both; margin: 0 1.5rem 1.5rem 0; }
+	
+	/* Buttons */
+	div.btn { margin-bottom: 2rem; }
+	div.btn a { background-color: $color-off-black; color: $color-white; display: block; }
+	div.btn a:hover { background-color: #777; }
+	
+	/* Panels */
+	div.panel { background-color: #777; padding: 1rem 1rem 1px 1rem; margin-bottom: 2rem; }
+	div.panel h1,
+	div.panel h2,
+	div.panel h3,
+	div.panel h4,
+	div.panel h5,
+	div.panel h6 { color: $color-white; margin-bottom: 1rem; }
+	div.panel p { color: $color-white; margin-bottom: 1rem; }
+	div.panel a { color: $color-white; text-decoration: underline; }
+	div.panel a:hover { color: $color-off-black; text-decoration: none; }
+	
+	/* Testimonials */
+	div.testimonials { margin: 0 0 2rem; }
+	div.testimonials p.quote { background-image: url(images/quote-l.png); background-repeat: no-repeat; background-position: left top; font-size: 1.6rem; line-height: 1.5rem; font-weight: normal; padding: 2rem 0 0 2rem; }
+	div.testimonials p.quote span { background-image: url(images/quote-r.png); background-position: right bottom; background-repeat: no-repeat; padding: 0 2rem 2rem 0; display: block; }
+	div.testimonials p.citation { font-weight: bold; font-size: 1.3rem; padding-left: 2rem; margin-bottom: 0; }
+	
+	/* Gallery */
+	div.gallery { margin-bottom: 2.4rem; }
+	div.gallery div.main-image { width: 49.6rem; height: 30rem; margin-bottom: 2.4rem; }
+	div.gallery div.main-image img { display: block; }
+	div.gallery ul { margin: 0; }
+	div.gallery ul li { float: left; width: 8rem; height: 8rem; margin: 0 2.4rem 2.4rem 0; list-style-type: none; }
+	div.gallery ul li.last { margin-right: 0; }
+	div.gallery ul li a:hover { opacity: 0.8; }
+	div.gallery ul li a.large-image-url-ref { display: none; }
+	div.gallery ul li.end-of-row { margin-right: 0; }
+	
+	/* Posts */
+
+	h1.posts-section-title { font-size: 4em; font-weight: normal; margin-bottom: 30px; }
+	
+	/* Posts: Sidebar */
+	div.panel-post-list { }
+	div.panel-post-list h2 { font-size: 2.6em; }
+	div.post-snippet { padding-bottom: 15px; border-bottom: 1px solid $color-white; margin-bottom: 15px; }
+	div.post-snippet.last { border-bottom: 0; margin-bottom: 0; }
+	div.post-snippet h3 { font-size: 1.8em; margin-bottom: 3px; }
+	div.post-snippet p { margin-bottom: 0; }
+	div.post-snippet p a.read-more { white-space: nowrap; }
+	
+	/* Posts: Index & Archive Listings */
+	div.post-listing { padding-bottom: 25px; border-bottom: 1px solid #777; margin-bottom: 25px; }
+	div.post-listing.last { border-bottom: 0; margin-bottom: 0; }
+	div.post-listing p { margin-bottom: 0; }
+	div.post-listing p a.read-more { white-space: nowrap; }
+	
+	/* Posts: Single */
+	div.post-full div.featured-image { border: 1px solid; padding: 10px; margin-bottom: 20px; }
+	div.post-full div.featured-image img,
+	div.post-full div.featured-image-left img,
+	div.post-full div.featured-image-right img { margin: 0; }
+	div.post-full div.featured-image-left { float: left; margin: 0 15px 15px 0; }
+	div.post-full div.featured-image-right { float: right; margin: 0 0 15px 15px; } 
+	
+	
+	/* Posts: Navigation */
+	div.navigation { margin-bottom: 20px; }
+	div.navigation .nav-btn { font-size: 1.3em; font-weight: bold; text-transform: uppercase; }
+	div.navigation .nav-btn-next { width: 200px; float: right; text-align: right; }
+	div.navigation .nav-btn-prev { width: 200px; float: left; }
+	
+	/* 
+	 Miscellaneous 
+	--------------------------------------------------------------------
+	*/
+	
+	/* Error Messages */
+	div.error-message { background-color: $color-white; border: 4px solid red; padding: 10px; margin-bottom: 20px; }
+	div.error-message h1 { color: red; }
+	div.error-message a { color: red; }
+	div.error-message a:hover { color: black; }
+	
+	/* Clearfix */
+	.group:before,
+	.group:after { content: ""; display: table; }
+	.group:after { clear: both; }
+	.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+	
+	/* 
+		 Infinite AJAX 
+	 	 --------------------------------------------------------------------
+	*/
+	
+	#target {
+	    position: fixed;
+	}
+
+	
+	/* 
+	.	Parallax Banner 
+	. 	--------------------------------------------------------------------
+	*/
+	
+	#moving-banner { min-height: 400px; }
+
+
+/// Old Styles

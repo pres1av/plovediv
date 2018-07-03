@@ -5,97 +5,104 @@
 /// Default font family
 /// @type List
 $default-font: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$heading-font: $default-font;
 	
-/// General colors
+/// General colours
 /// @type Color
 $color-white: #fff;
 $color-black: #000;
 $color-off-black: #222;
-$color-grey: #5d5a5a;
+$color-grey: #5e5e5e;
+$color-dark-grey: #4d4d4d;
+$color-very-dark-grey: #1a1a1a;
+$color-very-light-grey: #c4c4c4;
 
 
-//Text
+/// Basic Text Colour
+/// @type Color
 $text-color: $color-off-black;
 $main-link-color: red;
 $main-link-hover: blue;
-		
-		$mainFontSize: 1.5em;
-		$mainlineHeight: 1.5em;
-		
-		$mainFont: Helvetica, Arial, sans-serif;
-		$headingFont: Helvetica, Arial, sans-serif;
-		
-		$headinglineHeight: 1.2rem;
-		$h1FontSize: 3rem;
-		$h2FontSize: 2.4rem;
-		$h3FontSize: 2rem;
-		$h4FontSize: 1.8rem;
-		$h5FontSize: 1.5rem;
-		$h6FontSize: 1.5rem;
 
-		$introFontSize: 2rem;
-		$introlineHeight: 1.5rem;
-		
-		$mainBold: 700;
-		$mainNormal: 400;
-		
-	//Header
-	
-		$headerHeight: 12rem;
-	
-		//Navigation
-		$navMenuTextColor: $color-off-black;
-		$navMenuBackgroundColor: transparent;
-		
-		$navFontSize: 1.5rem;
+/// Basic Font Size
+/// @type Font-size
+$main-font-size: 1.5rem;
 
-		$navMenuTextColorActive: $color-white;
-		$navMenuBackgroundColorActive: $color-off-black;
+$h1-font-size: 3rem;
+$h2-font-size: 2.4rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.8rem;
+$h5-font-size: 1.5rem;
+$h6-font-size: 1.5rem;
 
-		$navMenuTextColorHover: $color-white;
-		$navMenuBackgroundColorHover: $color-off-black;
+/// Basic Line Height
+/// @type Line-height		
+$main-line-height: 1.5rem;
+$heading-line-height: 1.2rem;
 
-			//Sub Menus
-			$navSubMenuTextColor: $color-white;
-			$navSubMenuBackgroundColor: $color-off-black;
-			$navSubMenuTextColorHover: $color-off-black;
-			$navSubMenuBackgroundColorHover: $color-white;
-		
-		//Header
-		$headingBackColor: rgba(255, 255, 255, 0.9);
-		
-	//Footer
-	
-		$footerBack: $color-off-black;
-		$footerPadding: 3rem 0;
-		
-		$footerTextColor: $color-white;
-		$footerLineHeight: 1.8rem;
-		
-		$footerLinkColor: $color-white;
-		$footerHoverColor: $color-white;
-		
-		$footerSpanColor: $color-white;
-		
-	//Slideshow
-	
-		$slidesOverlayTextColor: $color-white;
-		$slidesOverlayBackColor: $color-off-black;
-	
-	
-	//Buttons
+/// Intro Typography
+/// @type Font-size & Line-height
+$intro-font-size: 2rem;
+$intro-line-height: 1.5rem;
 
-		$buttonTransitions: background-color 0.2s, color 0.2s, opacity 0.2s;
+/// Basic Font Weights
+// @type Font-weight
+$normal-font-weight: 400;
+$bold-font-weight: 700;
 		
-		$buttonTextColor: $color-off-black;
-		$buttonBackColor: $color-white;
 		
-		$buttonTextHoverColor: $color-white;
-		$buttonBackHoverColor: $color-off-black;
+//Header
+$header-height: 12rem;
+$header-background-color: rgba(255, 255, 255, 0.9);
+
+	
+//Navigation
+$nav-font-size: 1.5rem;
 		
-		$buttonPadding: 7px 3rem;
-		$buttonFontSize: 1.5rem;
-		$buttonLineHeight: 1.3rem;
+$nav-menu-text-color: $color-off-black;
+$nav-menu-background-color: transparent;
+		
+$nav-menu-text-color-active: $color-white;
+$nav-menu-background-color-active: $color-off-black;
+
+$nav-menu-text-color-hover: $color-white;
+$nav-menu-background-color-hover: $color-off-black;
+
+//Sub Menus
+$nav-sub-menu-text-color: $color-white;
+$nav-sub-menu-background-color: $color-off-black;
+$nav-sub-menu-text-color-hover: $color-off-black;
+$nav-sub-menu-background-color-hover: $color-white;
+		
+//Footer
+$footer-background: $color-off-black;
+$footer-padding: 3rem 0;
+		
+$footer-text-color: $color-white;
+$footer-line-height: 1.8rem;
+		
+$footer-link-color: $color-white;
+$footer-hover-color: $color-white;
+		
+$footer-span-color: $color-white;
+		
+//Slideshow
+$slides-overlay-text-color: $color-white;
+$slides-overlay-background-color: $color-off-black;
+	
+	
+//Buttons
+$button-transitions: background-color 0.2s, color 0.2s, opacity 0.2s;
+		
+$button-text-color: $color-off-black;
+$button-background-color: $color-white;
+		
+$button-text-hover-color: $color-white;
+$button-background-hover-color: $color-off-black;
+		
+$button-padding: .7rem 3rem;
+$button-font-size: 1.5rem;
+$button-line-height: 1.3rem;
 		
 		
 /// Container's maximum width
@@ -114,14 +121,9 @@ $grid-width: 118rem !default;
 		$columnMargin: $columnMarginPixels / $grid-width * 100%;
 		$columnMainWidth: ($columnMainWidthPixels / $grid-width * 100%) - $columnMargin;
 
-	//Layouts
-		//for .page-section-back
-		$pageBackMargins: 3rem;
-		$pageBackPaddings: 3rem;
-
-		//for .page-section
-		$pageMargins: 3rem;
-		$pagePaddings: 3rem;
+//Layouts
+$page-margins: 3rem;
+$page-paddings: 3rem;
 
 
 
@@ -131,6 +133,7 @@ $grid-width: 118rem !default;
 /// Responsive Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in em
+//	1em = 16px
 $breakpoints: (
 	'small': 25em,					//400px
 	'phone': 37.5em,				//600px

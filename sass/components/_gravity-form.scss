@@ -1,0 +1,262 @@
+/* 
+.	Gravity Form 
+.	--------------------------------------------------------------------
+*/
+
+.gravity-form { 
+	background-color: $color-off-black; 
+	padding: 2rem;
+	
+	h3 {
+		color: $color-white;
+	}
+	
+	ul {
+		margin: 0;
+		
+		li {
+			list-style: none; 
+			margin: 0 0 20px 0;
+		}
+	}
+	
+	input,
+	textarea {
+		display: block; 
+		width: 100%; 
+		font-size: 1rem; 
+		line-height: 1.5rem;
+	}
+	
+	textarea {
+		height: 100px;
+	}
+	
+	div.ginput_container {
+		padding: .5rem; 
+		background-color: $color-white;
+		
+		&.ginput_container_select {
+            padding: 0;
+            
+    		select {
+        		-webkit-appearance: none; 
+        		-moz-appearance: none; 
+        		white-space: normal; 
+        		box-sizing: content-box; 
+        		border: 0px; 
+        		padding: 0; 
+        		margin: 0; 
+        		font-weight: $normal-font-weight; 
+        		font-family: inherit; 
+        		display: block; 
+        		background: transparent;
+        		border-radius: 0;
+        		width: 100%;
+        		cursor: pointer;
+        		padding: .5rem;
+        		line-height: 1.5rem;
+        		background-image: url(images/drop-down.png);
+        		background-position: right center;
+        		background-repeat: no-repeat;
+        		background-size: 3rem auto;
+        		box-sizing: border-box;
+        		height: 3.2rem;
+    		}
+		}
+		
+		&.ginput_container_fileupload {
+    		padding: 0;
+    		background-color: transparent;
+    		color: $color-white; 
+    		position: relative;
+    		
+    		input {
+        		/*font-size: 1.5rem;*/
+    		}
+    		/*input {
+        		opacity: 0;
+    		}
+    		&:after {
+        		@include button-style();
+        		content: 'Choose File';
+        		font-size: 1rem;
+        		position: absolute;
+        		top: 0;
+        		pointer-events: none;
+    		}
+    		&:hover {
+        		&:after {
+            		
+        		}
+    		}
+    		/*input[type='file'] {
+        		@include button-style();
+    		}*/
+		}
+		
+		&.ginput_container_radio {
+    		padding: 0;
+    		padding-top: .5rem;
+    		background-color: transparent;
+    		
+    		li {
+        		margin-bottom: .5rem;
+        		
+        		input {
+            		width: auto;
+            		display: inline;
+            		margin-right: 1rem;
+        		}
+    		}
+		}
+		
+		&.ginput_container_checkbox {
+    		padding: 0;
+    		padding-top: .5rem;
+    		background-color: transparent;
+    		
+    		li {
+        		margin-bottom: .5rem;
+        		
+        		input {
+            		width: auto;
+            		display: inline;
+            		margin-right: 1rem;
+        		}
+    		}
+		}
+	}
+	
+	p, label {
+		color: $color-white;
+	}
+	
+	input[type="submit"] {
+		display: inline-block; 
+		padding: $button-padding; 
+		width: auto; 
+		float: left; 
+		font-size: $button-font-size; 
+		text-transform: uppercase; 
+		background-color: $button-background-color; 
+		color: $button-text-color; 
+		line-height: $button-line-height;
+		
+		@include on-event {
+			background-color: $button-background-hover-color; 
+			color:  $button-text-hover-color;
+		}
+	}
+	
+	.validation_error {
+		font-size: $main-font-size;
+		line-height: $main-line-height;
+		margin-bottom: 2rem;
+		color: red;
+	}
+	
+	.validation_message {
+		color: red;
+	}
+	
+	::-webkit-input-placeholder {
+		color: $color-off-black;
+	}
+	
+	:-moz-placeholder {
+		color: $color-off-black;
+		opacity: 1;
+		line-height: normal;
+	}
+	
+	::-moz-placeholder {
+		color: $color-off-black;
+		opacity: 1;
+		line-height: normal;
+	}
+	
+	:-ms-input-placeholder {
+		color: $color-off-black;
+		line-height: normal;
+	}
+	
+    .gf-left {
+        float: left;
+        box-sizing: border-box;
+        padding-right: 1rem;
+        width: 50%;
+    }
+    
+    .gf-right {
+        float: right;
+        box-sizing: border-box;
+        padding-left: 1rem;
+        width: 50%;
+    }
+}
+
+#ui-datepicker-div {
+    background-color: $color-white;
+    
+    .ui-datepicker-header {
+        padding: .5rem;
+        
+        .ui-corner-all {
+            @include button-style();
+            padding: .5rem 1rem;
+            font-size: 1.3rem;
+            background-color: $color-off-black;
+            color: $color-white;
+            margin-bottom: .5rem;
+            
+            &:hover {
+                background-color: $color-white;
+                color: $color-off-black;
+            }
+            
+            &.ui-datepicker-next {
+                float: right;
+            }
+        }
+        
+        .ui-datepicker-title {
+            text-align: right;
+            
+            select {
+                margin-left: .5rem;
+            }
+        }
+    }
+    
+    table {
+	    
+        thead {
+	        
+            th {
+                border-bottom: 1px solid #ddd;
+                font-size: 1.3rem;
+                padding: .5rem;
+            }
+        }
+        
+        tbody {
+            td {
+                font-size: 1.3rem;
+                cursor: pointer;
+                
+                &:hover {
+                    background-color: $color-off-black;
+                    
+                    a {
+                        color: $color-white;
+                    }
+                }
+                
+                a {
+                    color: $color-off-black;
+                }
+            }
+        }
+    }
+}

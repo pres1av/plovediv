@@ -1,0 +1,44 @@
+/* 
+	 Footer 
+ 	 --------------------------------------------------------------------
+*/
+
+.footer { 
+	background-color: $footer-background; 
+	margin: 0; 
+	padding: $footer-padding;
+	
+	.container { 
+		
+		ul {
+			margin: 0;
+		
+			li {
+				list-style: none;
+				margin: 0;
+				
+				li {
+					margin-left: 20px;
+				}
+			}
+		}
+		
+		p, li { 
+			color: $footer-text-color;
+			text-align: left;
+			line-height: $footer-line-height;
+			
+			a { 
+				color: $footer-link-color;
+				
+				@include on-event {
+					color: $footer-hover-color;
+				}
+			}
+			span {
+				color: $footer-span-color;
+			}
+		}
+		
+	}
+}

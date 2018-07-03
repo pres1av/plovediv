@@ -5,4 +5,105 @@
 body {
 	color: $text-color;
 	font: normal 1.6rem / 1.5 $default-font;
+	text-align: left;
 }
+
+/* Main Text Settings */
+strong {
+	font-weight: $bold-font-weight;
+}
+
+em {
+	font-style: italic;
+}
+
+p, li, td  {
+	font-size: $main-font-size;
+	line-height: $main-line-height;
+	font-weight: $normal-font-weight;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+ol, ul {
+	margin: 0 0 1.5rem 1.7rem;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+ul li {
+	list-style-type: disc;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: $heading-line-height;
+	
+	a {
+		text-decoration: underline;
+		
+		@include on-event {
+			text-decoration: none;
+		}
+	}
+}
+
+input[type='text'], button, textarea, input[type="submit"] {
+	white-space: normal;
+	box-sizing: content-box;
+	line-height: 1rem;
+	font-weight: $normal-font-weight;
+	display: block;
+	background: transparent;
+}
+
+input[type='submit'], button {
+	cursor: pointer;
+	@include transition($button-transitions);
+}
+
+/* Headings */
+h1 {
+	font-size: $h1-font-size;
+	font-weight: $bold-font-weight;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	font-weight: $bold-font-weight;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	font-weight: $bold-font-weight;
+	margin-bottom: 1rem;
+}
+
+h4 {
+	font-size: $h4-font-size;
+	font-weight: $bold-font-weight;
+	margin-bottom: 1rem;
+}
+
+h5 {
+	font-size: $h5-font-size;
+	font-weight: $normal-font-weight;
+	margin-bottom: .5rem;
+}
+
+h6 {
+	font-size: $h6-font-size;
+	font-weight: $bold-font-weight;
+	margin-bottom: .5rem;
+}
+
+/* Intro Text Styles */
+p.intro {
+	font-size: $intro-font-size;
+	line-height: $intro-line-height;
+	font-weight: $normal-font-weight;
+} 

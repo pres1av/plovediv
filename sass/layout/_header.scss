@@ -1,0 +1,45 @@
+/* 
+.	Header 
+.	--------------------------------------------------------------------
+*/
+
+.page-section-back.header { 
+	background-color: $header-background-color;
+	margin: 0; 
+	
+	.page-section {
+		height: $header-height;
+	}
+}
+
+.section.header {
+	background-color: $header-background-color;
+	margin: 0; 
+	
+	.container {
+		height: $header-height;
+	}
+}
+
+/* Logo */
+#logo {
+	position: absolute;
+	top: 0;
+	left: 1.5rem;
+	
+	img {
+		display: block;
+	}
+}
+
+/* Contact */
+#contact { 
+	position: absolute;
+	top: 0;
+	right: 1.5rem;
+	 
+	p {
+		text-align: right;
+		margin: 0;
+	} 
+}

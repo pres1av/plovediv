@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// module-menu-full
+// -----------------------------------------------------------------------------
+
+#module-menu-full {
+    background-color: $color-off-black;
+    height: 3.2rem;
+    
+    #top-menu {
+        top: 0;
+        bottom: auto;
+        z-index: 400;
+        position: static;
+        
+        &.nav-menu ul {
+            display: table;
+            width: 100%;
+            
+            li { 
+                display: table-cell;
+                float: none;
+                text-align: center;
+                
+                &.current-menu-item a, 
+    		 	&.current-menu-item a,
+    		 	&.current-page-ancestor a {
+                    background-color: $color-white;
+                    color: $color-off-black;
+    		 	}
+    		 	
+    		 	a {
+                    color: $color-white;
+                    
+                    @include on-event {
+                        background-color: $color-white;
+                        color: $color-off-black;
+                    }
+                }
+                
+    			.sub-menu {
+        			width: auto;
+        			display: block;
+        			
+    				li {
+        				text-align: left;
+    					display: block;
+    				}
+    			}
+            }
+        }
+    }
+}

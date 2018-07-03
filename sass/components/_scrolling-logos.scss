@@ -1,0 +1,55 @@
+/* 
+.	Scrolling Logos 
+.	--------------------------------------------------------------------
+*/
+
+#scrolling-logos {
+	margin: 0 -1.5rem;
+	position: relative;
+	
+	#scrolling-logos-inner { 
+		position: relative;
+		
+		div {
+			
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		
+		.slick-slide {
+			/*width: 216px !important; 
+			height: 65px; 
+			margin-right: 32px; */
+			vertical-align: top;
+			padding: 0 1.5rem;
+			
+			img {
+				display: block;
+			}
+		}
+	}
+	
+	.prev-next {
+		display: block; 
+		position: absolute; 
+		top: 1.8rem; 
+		width: 3rem; 
+		height: 3rem;
+		
+		&:hover {
+			background-position: center bottom;
+		}
+	}
+	
+	#prev {
+		background-image: url(images/prev.png); 
+		left: -3rem;
+	}
+	
+	#next {
+		background-image: url(images/next.png); 
+		right: -3rem;		
+	}
+}

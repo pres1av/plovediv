@@ -53,3 +53,27 @@
 	position: absolute;
 	width: 1px;
 }
+
+.display-none {
+	display: none !important;
+}
+
+.relative {
+	position: relative;
+}
+
+.padding-bottom {
+	padding-bottom: $page-paddings;
+}
+
+.padding-top {
+	padding-top: $page-paddings;
+}
+
+.margin-bottom {
+	padding-bottom: $page-margins;
+}
+
+.margin-top {
+	padding-top: $page-margins;
+}

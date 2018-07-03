@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// module-fixed-header 
+// -----------------------------------------------------------------------------
+
+.responsive-960-plus {
+    #module-fixed-header {
+        position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $header-background-color; margin: 0; 
+        	.container {
+        		height: $header-height;
+        		@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		height: 9rem;
+            	}
+        	}
+        }
+        
+    }
+}
+
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header {
+        //position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $header-background-color; margin: 0; 
+        	.container {
+        		height: $header-height;
+        		//@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		//height: 90px;
+            	}
+        	}
+        }
+        
+    }
+}
+
+#module-fixed-header-spacer {
+    height: $header-height;
+}
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header-spacer {
+        height: 0;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// module-fixed-header-overlay
+// -----------------------------------------------------------------------------
+
+
+
+.responsive-960-plus {
+    #module-fixed-header-overlay {
+        position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $header-background-color; margin: 0; 
+        	.container {
+        		height: $header-height;
+        		@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		height: 9rem;
+            	}
+        	}
+        }
+        
+    }
+}
+
+.responsive-768-960,
+.responsive-516-768,
+.responsive-516-and-under {
+    #module-fixed-header-overlay {
+        //position: fixed;
+        z-index: 200;
+        &.section.header {
+        	background-color: $header-background-color; margin: 0; 
+        	.container {
+        		height: $header-height;
+        		//@include transition(all 500ms);
+        	}
+        	&.scrolling {
+            	.container {
+            		//height: 90px;
+            	}
+        	}
+        }
+    }
+}

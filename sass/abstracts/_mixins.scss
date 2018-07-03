@@ -32,6 +32,7 @@
   	}
 }
 
+/// Center an absolutely positioned element inside its parent
 @mixin absCenter {
     position: absolute;
     top: 50%;
@@ -39,9 +40,46 @@
     transform: translate(-50%, -50%);
 }
 
-
-//1em = 16px
-
+/// Organise responsive media queries
+/// @param {String} $breakpoint
 @mixin responsive($breakpoint) {
     @media only screen and (max-width: map-get($breakpoints, $breakpoint)) { @content };
+}
+
+/// Prefixes for transition CSS rule
+/// @param {List of Strings} $transition
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-ms-transition: $transition;
+	transition: $transition;
+}
+
+/// Prefixes for transition CSS rule
+/// @param {List of Strings} $box-shadow
+@mixin box-shadow($box-shadow...) {
+	-webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+/// Prefixes for transition CSS rule
+/// @param {List of Strings} $transport
+@mixin transform($transform) {
+	-webkit-transform: $transform;  
+    -ms-transform: $transform;  
+    transform: $transform;
+}
+
+/// Old, replace
+@mixin button-style(){
+	display:inline-block; 
+	line-height: $button-line-height; 
+	background-color: $button-background-color;
+	color: $button-text-color;  
+	padding: $button-padding; 
+	font-size: $button-font-size;
+	
+	@include on-event {
+		background-color: $button-background-hover-color;
+		color: $button-text-hover-color;
+	}
 }
