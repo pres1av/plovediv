@@ -6,6 +6,7 @@
     #module-fixed-header {
         position: fixed;
         z-index: 200;
+        width: 100%;
         &.section.header {
         	background-color: $header-background-color; margin: 0; 
         	.container {
@@ -28,6 +29,7 @@
     #module-fixed-header {
         //position: fixed;
         z-index: 200;
+        width: 100%;
         &.section.header {
         	background-color: $header-background-color; margin: 0; 
         	.container {
@@ -67,6 +69,7 @@
     #module-fixed-header-overlay {
         position: fixed;
         z-index: 200;
+        width: 100%;
         &.section.header {
         	background-color: $header-background-color; margin: 0; 
         	.container {
@@ -89,6 +92,7 @@
     #module-fixed-header-overlay {
         //position: fixed;
         z-index: 200;
+        width: 100%;
         &.section.header {
         	background-color: $header-background-color; margin: 0; 
         	.container {

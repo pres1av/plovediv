@@ -266,6 +266,7 @@
 	// Add Theme Support for the following features
 	add_theme_support('menus');
 	add_theme_support('post-thumbnails');
+	add_theme_support( 'title-tag' );
 
 	// Enable Editors to edit Menus
 	$role_object = get_role( 'editor' );

@@ -1542,6 +1542,10 @@ html, body {
     overflow: hidden;
     height: 100%; }
 
+.container {
+  width: 118rem;
+  position: relative; }
+
 a {
   color: red;
   text-decoration: none;
@@ -1555,49 +1559,37 @@ a {
     color: blue;
     text-decoration: none; }
 
-/* Lists */
-ol li,
-ul li {
+ol li, ul li {
   margin: 0 0 1rem; }
+  ol li ol, ol li ul, ul li ol, ul li ul {
+    margin: .5rem 0 0 0; }
+    ol li ol li, ol li ul li, ul li ol li, ul li ul li {
+      font-size: 1em;
+      margin-left: 1.5rem; }
+      ol li ol li ol, ol li ol li ul, ol li ul li ol, ol li ul li ul, ul li ol li ol, ul li ol li ul, ul li ul li ol, ul li ul li ul {
+        margin: 0; }
+        ol li ol li ol li, ol li ol li ul li, ol li ul li ol li, ol li ul li ul li, ul li ol li ol li, ul li ol li ul li, ul li ul li ol li, ul li ul li ul li {
+          font-size: 1em;
+          margin-bottom: .5rem;
+          margin-left: 3rem; }
 
-ol li ol,
-ul li ul {
-  margin: .5rem 0 0 0; }
-
-ol li ol li,
-ul li ul li {
-  font-size: 1rem;
-  margin-left: 1.5rem; }
-
-ol li ol li ol,
-ul li ul li ul {
-  margin: 0; }
-
-ol li ol li ol li,
-ul li ul li ul li {
-  font-size: 1rem;
-  margin-bottom: .5rem;
-  margin-left: 3rem; }
-
-/* Tables */
 table {
   border: 1px solid #ddd;
   border-right: 0;
   border-bottom: 0;
   margin-bottom: 2rem; }
+  table td {
+    border: 1px solid #ddd;
+    border-top: 0;
+    border-left: 0;
+    font-size: 1em;
+    padding: .8rem; }
 
-table td {
-  border: 1px solid #ddd;
-  border-top: 0;
-  border-left: 0;
-  font-size: 1rem;
-  padding: .8rem; }
-
-/* Images */
-.main-loop-content img {
+img {
   max-width: 100%;
   height: auto; }
 
+/* Images */
 img.alignnone {
   margin-bottom: 1.5rem; }
 
@@ -1954,26 +1946,6 @@ p.intro {
   display: table; }
 
 /**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 118rem;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
-
-/**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
@@ -2083,7 +2055,8 @@ p.intro {
 
 .responsive-960-plus #module-fixed-header {
   position: fixed;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
   .responsive-960-plus #module-fixed-header.section.header {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 0; }
@@ -2098,7 +2071,8 @@ p.intro {
 .responsive-768-960 #module-fixed-header,
 .responsive-516-768 #module-fixed-header,
 .responsive-516-and-under #module-fixed-header {
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
   .responsive-768-960 #module-fixed-header.section.header,
   .responsive-516-768 #module-fixed-header.section.header,
   .responsive-516-and-under #module-fixed-header.section.header {
@@ -2119,7 +2093,8 @@ p.intro {
 
 .responsive-960-plus #module-fixed-header-overlay {
   position: fixed;
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
   .responsive-960-plus #module-fixed-header-overlay.section.header {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 0; }
@@ -2134,7 +2109,8 @@ p.intro {
 .responsive-768-960 #module-fixed-header-overlay,
 .responsive-516-768 #module-fixed-header-overlay,
 .responsive-516-and-under #module-fixed-header-overlay {
-  z-index: 200; }
+  z-index: 200;
+  width: 100%; }
   .responsive-768-960 #module-fixed-header-overlay.section.header,
   .responsive-516-768 #module-fixed-header-overlay.section.header,
   .responsive-516-and-under #module-fixed-header-overlay.section.header {
