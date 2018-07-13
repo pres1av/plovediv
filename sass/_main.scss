@@ -28,8 +28,8 @@
 @import
 	'layout/header',
 	'layout/footer',
-	'layout/fixed-header',
-	'layout/static-header',
+	'layout/header-fixed',
+	'layout/header-static',
 	'layout/slideshow-banner',
 	'layout/menu-full',
 	'layout/form-section';
@@ -38,16 +38,20 @@
 @import
 	'components/responsive-bar',
 	'components/responsive-menu',
-	'components/nav-menus',
+	'components/nav-menu',
+	'components/button',
+	'components/cycle-overlay',
 	'components/slider',
 	'components/scrolling-logos',
 	'components/gravity-form',
+	'components/testimonials',
 	'components/cookie-banner';
+	
+// 6. Themes
+@import
+	'themes/default';
 
-// 6. Page-specific styles
-//@import
-//	'pages/home';
+// 7. Page-specific styles
+@import
+	'pages/home';
 
-// 7. Themes
-//@import
-//	'themes/default';

@@ -1,4 +1,4 @@
-<div class="main-loop-content">
+<div class="main-content__loop">
 	<?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
 

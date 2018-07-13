@@ -1,10 +1,10 @@
 (function($) {
 	
 	//Module elements
-	var moduleFixedHeader = $('#module-fixed-header');
-	var moduleFixedHeaderOverlay = $('#module-fixed-header-overlay');
-	var moduleSlideshowBanner = $('#module-slideshow-banner');
-	var moduleSlideshowBannerFull = $('#module-slideshow-banner-full-screen');
+	var moduleFixedHeader = $('.header__fixed');
+	var moduleSlideshowBanner = $('.slideshow-banner');
+	moduleSlideshowBannerFull = $('.slideshow-banner--full-screen');
+	var moduleSlideshowBannerSlide = $('.slideshow-banner .slideshow-banner__slide');
 	
 	//Toggle display-none class ON/OFF
 	var toggleDisplayNone = (elem, flag) => elem[flag + 'Class']('display-none');
@@ -18,14 +18,14 @@
     // -----------------------------------------------------------------------------
     
     function headerHeightScroll() {
-        var headerOffset = moduleFixedHeader.add(moduleFixedHeaderOverlay).offset().top; //console.log(headerOffset);
+        var headerOffset = moduleFixedHeader.offset().top; //console.log(headerOffset);
         
         var wpAdminBar = $('#wpadminbar').height();
         
         if((headerOffset - wpAdminBar) > 0) {
-            moduleFixedHeader.add(moduleFixedHeaderOverlay).addClass('scrolling');
+            moduleFixedHeader.addClass('scrolling');
         } else {
-            moduleFixedHeader.add(moduleFixedHeaderOverlay).removeClass('scrolling');
+            moduleFixedHeader.removeClass('scrolling');
         }
     }
     
@@ -37,7 +37,7 @@
     // module-slideshow-banner
     // -----------------------------------------------------------------------------
     
-	toggleDisplayNone(moduleSlideshowBanner.children('.slide'), 'remove');
+	toggleDisplayNone(moduleSlideshowBannerSlide, 'remove');
 	
 	moduleSlideshowBanner.cycle({
 		slides: '> div',
@@ -45,33 +45,17 @@
 	    timeout: 3000,
 	    fx: 'fade'
 	});
-
-
-
-    // -----------------------------------------------------------------------------
+	
+	// -----------------------------------------------------------------------------
     // module-slideshow-banner-full-screen
     // -----------------------------------------------------------------------------
-    
-    
-	toggleDisplayNone(moduleSlideshowBannerFull.children('.slide'), 'remove');
-	
-	moduleSlideshowBannerFull.cycle({
-		slides: '> div',
-	    speed: 1500,
-	    timeout: 3000,
-	    fx: 'fade'
-	});
+
     				
     function changeHeight() {
         var winHeight = $(window).height();
-        var wpAdminBar = $('#wpadminbar').height();
-        var headerHeightStatic = $('#module-static-header').height();
-        var headerHeightFixed = $('#module-fixed-header').height();
-        var fullMenuHeight = $('#module-menu-full').height();
-        var minusHeight = wpAdminBar + headerHeightStatic + headerHeightFixed + fullMenuHeight;
+        var minusHeight = moduleSlideshowBannerFull.offset().top;
                 
         moduleSlideshowBannerFull.height(winHeight - minusHeight);
-
     }
     
     changeHeight();

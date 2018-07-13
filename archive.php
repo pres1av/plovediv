@@ -11,7 +11,7 @@ Template Name: Posts Archive Template
 
 
 
-<div class="posts archive id<?php echo $post->ID; ?>">
+<main class="posts archive id<?php echo $post->ID; ?>">
 
 	<?php /*<div class="section padding-top padding-bottom">
 		<div class="container">
@@ -46,7 +46,7 @@ Template Name: Posts Archive Template
 		</div>
 	</div> */ ?>
 	
-	<div id="news-new" class="section padding-top padding-bottom">
+	<div id="news-new" class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
@@ -78,6 +78,6 @@ Template Name: Posts Archive Template
 					
 	
 	
-</div>
+</main>
 
 <?php get_footer(); ?>

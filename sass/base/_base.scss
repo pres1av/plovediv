@@ -61,8 +61,20 @@ html, body {
 }
 
 .container {
-	width: $grid-width;
+	max-width: $grid-width;
 	position: relative;
+}
+
+.main-content {
+	
+	&__loop {
+		
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
 }
 
 /// Links
@@ -128,21 +140,30 @@ table {
 img {
 	max-width: 100%;
 	height: auto;
+	
+	&.alignnone {
+		margin-bottom: 1.5rem;
+	}
+	
+	&.aligncenter {
+		display: block;
+		margin: 0 auto 1.5rem;
+	}
+	
+	&.alignright {
+		float: right;
+		clear: both;
+		margin: 0 0 1.5rem 1.5rem;
+	}
+	
+	&.alignleft {
+		float: left;
+		clear: both;
+		margin: 0 1.5rem 1.5rem 0;
+	}
 }
 
 /// Old Styles for inspecting
-	
-	/* Images */
-	
-	img.alignnone { margin-bottom: 1.5rem; }
-	img.aligncenter { display: block; margin: 0 auto 1.5rem; }
-	img.alignright { float: right; clear: both; margin: 0 0 1.5rem 1.5rem; }
-	img.alignleft { float: left; clear: both; margin: 0 1.5rem 1.5rem 0; }
-	
-	/* Buttons */
-	div.btn { margin-bottom: 2rem; }
-	div.btn a { background-color: $color-off-black; color: $color-white; display: block; }
-	div.btn a:hover { background-color: #777; }
 	
 	/* Panels */
 	div.panel { background-color: #777; padding: 1rem 1rem 1px 1rem; margin-bottom: 2rem; }
@@ -155,12 +176,6 @@ img {
 	div.panel p { color: $color-white; margin-bottom: 1rem; }
 	div.panel a { color: $color-white; text-decoration: underline; }
 	div.panel a:hover { color: $color-off-black; text-decoration: none; }
-	
-	/* Testimonials */
-	div.testimonials { margin: 0 0 2rem; }
-	div.testimonials p.quote { background-image: url(images/quote-l.png); background-repeat: no-repeat; background-position: left top; font-size: 1.6rem; line-height: 1.5rem; font-weight: normal; padding: 2rem 0 0 2rem; }
-	div.testimonials p.quote span { background-image: url(images/quote-r.png); background-position: right bottom; background-repeat: no-repeat; padding: 0 2rem 2rem 0; display: block; }
-	div.testimonials p.citation { font-weight: bold; font-size: 1.3rem; padding-left: 2rem; margin-bottom: 0; }
 	
 	/* Gallery */
 	div.gallery { margin-bottom: 2.4rem; }
@@ -217,12 +232,6 @@ img {
 	div.error-message h1 { color: red; }
 	div.error-message a { color: red; }
 	div.error-message a:hover { color: black; }
-	
-	/* Clearfix */
-	.group:before,
-	.group:after { content: ""; display: table; }
-	.group:after { clear: both; }
-	.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
 	
 	/* 
 		 Infinite AJAX 

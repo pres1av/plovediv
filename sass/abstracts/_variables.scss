@@ -4,29 +4,30 @@
 
 /// Default font family
 /// @type List
-$default-font: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-$heading-font: $default-font;
+$default-font: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$heading-font: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 	
 /// General colours
 /// @type Color
 $color-white: #fff;
 $color-black: #000;
-$color-off-black: #222;
-$color-grey: #5e5e5e;
+$color-off-black: #414040;
+$color-grey: #767479;
 $color-dark-grey: #4d4d4d;
+$color-light-grey: #b3b3ab;
 $color-very-dark-grey: #1a1a1a;
-$color-very-light-grey: #c4c4c4;
+$color-very-light-grey: #d4d7d7;
 
 
 /// Basic Text Colour
 /// @type Color
-$text-color: $color-off-black;
+$text-color: #414040;
 $main-link-color: red;
 $main-link-hover: blue;
 
 /// Basic Font Size
 /// @type Font-size
-$main-font-size: 1.5rem;
+$main-font-size: 1.6rem;
 
 $h1-font-size: 3rem;
 $h2-font-size: 2.4rem;
@@ -38,7 +39,7 @@ $h6-font-size: 1.5rem;
 /// Basic Line Height
 /// @type Line-height		
 $main-line-height: 1.5rem;
-$heading-line-height: 1.2rem;
+$heading-line-height: 2rem;
 
 /// Intro Typography
 /// @type Font-size & Line-height
@@ -53,20 +54,20 @@ $bold-font-weight: 700;
 		
 //Header
 $header-height: 12rem;
-$header-background-color: rgba(255, 255, 255, 0.9);
+$header-background-color: rgba(255, 255, 255, 0);
 
 	
 //Navigation
 $nav-font-size: 1.5rem;
 		
-$nav-menu-text-color: $color-off-black;
+$nav-menu-text-color: $color-white;
 $nav-menu-background-color: transparent;
 		
 $nav-menu-text-color-active: $color-white;
-$nav-menu-background-color-active: $color-off-black;
+$nav-menu-background-color-active: transparent;
 
 $nav-menu-text-color-hover: $color-white;
-$nav-menu-background-color-hover: $color-off-black;
+$nav-menu-background-color-hover: transparent;
 
 //Sub Menus
 $nav-sub-menu-text-color: $color-white;
@@ -75,16 +76,16 @@ $nav-sub-menu-text-color-hover: $color-off-black;
 $nav-sub-menu-background-color-hover: $color-white;
 		
 //Footer
-$footer-background: $color-off-black;
+$footer-background: #efefef;
 $footer-padding: 3rem 0;
 		
-$footer-text-color: $color-white;
+$footer-text-color: $color-off-black;
 $footer-line-height: 1.8rem;
 		
-$footer-link-color: $color-white;
-$footer-hover-color: $color-white;
+$footer-link-color: $color-off-black;
+$footer-hover-color: $color-grey;
 		
-$footer-span-color: $color-white;
+$footer-span-color: #808080;
 		
 //Slideshow
 $slides-overlay-text-color: $color-white;
@@ -92,7 +93,7 @@ $slides-overlay-background-color: $color-off-black;
 	
 	
 //Buttons
-$button-transitions: background-color 0.2s, color 0.2s, opacity 0.2s;
+$button-transitions: all .5s;
 		
 $button-text-color: $color-off-black;
 $button-background-color: $color-white;
@@ -107,19 +108,7 @@ $button-line-height: 1.3rem;
 		
 /// Container's maximum width
 /// @type Length
-$grid-width: 118rem !default;
-
-
-
-	//Rows and Columns
-
-		$columnMarginPixels: 3rem;
-
-		//This is only used if the main column is outside the usual layout otherwise use row.three-col/row.two-col column-sizing in the markup.
-		$columnMainWidthPixels: 63rem;
-		
-		$columnMargin: $columnMarginPixels / $grid-width * 100%;
-		$columnMainWidth: ($columnMainWidthPixels / $grid-width * 100%) - $columnMargin;
+$grid-width: 128rem !default;
 
 //Layouts
 $page-margins: 3rem;
@@ -152,4 +141,4 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '' !default;

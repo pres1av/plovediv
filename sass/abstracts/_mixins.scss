@@ -54,32 +54,24 @@
 	transition: $transition;
 }
 
-/// Prefixes for transition CSS rule
+/// Prefixes for box-shadow CSS rule
 /// @param {List of Strings} $box-shadow
 @mixin box-shadow($box-shadow...) {
 	-webkit-box-shadow: $box-shadow;
     box-shadow: $box-shadow;
 }
 
-/// Prefixes for transition CSS rule
-/// @param {List of Strings} $transport
+/// Prefixes for transform CSS rule
+/// @param {List of Strings} $transform
 @mixin transform($transform) {
 	-webkit-transform: $transform;  
     -ms-transform: $transform;  
     transform: $transform;
 }
 
-/// Old, replace
-@mixin button-style(){
-	display:inline-block; 
-	line-height: $button-line-height; 
-	background-color: $button-background-color;
-	color: $button-text-color;  
-	padding: $button-padding; 
-	font-size: $button-font-size;
-	
-	@include on-event {
-		background-color: $button-background-hover-color;
-		color: $button-text-hover-color;
-	}
+/// Prefixes for placeholder CSS pseudo-element
+@mixin placeholder {
+	::-webkit-input-placeholder { @content } 
+	:-ms-input-placeholder { @content }
+	::placeholder { @content }
 }

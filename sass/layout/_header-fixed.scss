@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// module-fixed-header 
+// -----------------------------------------------------------------------------
+
+.header__fixed {
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	background-color: $header-background-color; margin: 0; 
+	        	
+	&.scrolling {
+		        	
+		.container {
+			height: 9rem;
+		}
+	}
+	    
+	@include responsive(tablet-portrait) {
+	    &:not(.header__fixed--overlay) {
+		    position: relative;
+		}
+		        	
+	    &.scrolling {
+			        	
+	    	.container {
+	    		height: auto;
+	    	}
+	    }
+	}
+}
+    
+.header__fixed-spacer {
+    height: $header-height;
+    
+    @include responsive(tablet-portrait) {
+	    height: 0;
+    }
+}    

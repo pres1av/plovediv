@@ -3,43 +3,44 @@
 .	--------------------------------------------------------------------
 */
 
-.page-section-back.header { 
-	background-color: $header-background-color;
-	margin: 0; 
-	
-	.page-section {
-		height: $header-height;
-	}
-}
-
-.section.header {
+.header {
 	background-color: $header-background-color;
 	margin: 0; 
 	
 	.container {
 		height: $header-height;
+		@include transition(all .5s);
 	}
-}
-
-/* Logo */
-#logo {
-	position: absolute;
-	top: 0;
-	left: 1.5rem;
 	
-	img {
+	/// Contact Box
+	&__contact-box {
+		position: absolute;
+		top: 0;
+		right: 1.5rem;
+		
+		p {
+			text-align: right;
+		}
+		
+		a {
+			color: $nav-menu-text-color; 
+			background-color: $nav-menu-background-color; 
+				
+			@include on-event { 
+				color: $nav-menu-text-color-hover; 
+				background-color: $nav-menu-background-color-hover; 
+			}
+		}
+	}
+	
+	&__logo-box {
+		position: absolute;
+		top: 0;
+		left: 1.5rem;
+	}
+	
+	&__logo {
 		display: block;
 	}
 }
 
-/* Contact */
-#contact { 
-	position: absolute;
-	top: 0;
-	right: 1.5rem;
-	 
-	p {
-		text-align: right;
-		margin: 0;
-	} 
-}

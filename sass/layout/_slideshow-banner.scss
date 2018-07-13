@@ -2,105 +2,22 @@
 // module-slideshow-banner
 // -----------------------------------------------------------------------------
 
-#module-slideshow-banner { 
+.slideshow-banner { 
 	background-color: transparent; 
 	overflow: hidden;
 	
-	.cycle-slide {
-		width: 100%; 
-		height: 100%; 
-		background-size: cover;
-		
-		.container {
-			
-			.cycle-overlay {
-				background-color: $slides-overlay-background-color; 
-				color: $slides-overlay-text-color; 
-				width: 30rem; 
-				padding: 2rem; 
-				position: absolute; 
-				top: 0; 
-				left: 1.5rem;
-				
-				h3 {
-					color: $color-white;
-				}
-				
-				p {
-					margin-bottom: 2rem;
-				}
-				
-				a.link {
-					display: inline-block; 
-					line-height: $button-line-height; 
-					background-color: $button-background-color; 
-					color: $button-text-color;  
-					padding: $button-padding; 
-					font-size: $button-font-size; 
-					text-transform: uppercase;
-					
-					@include on-event {
-						background-color: $button-background-hover-color; 
-						color: $button-text-hover-color;
-					}
-				}
-			}
-			
-		}
-	}
-}
-
-// -----------------------------------------------------------------------------
-// module-slideshow-banner-full-screen
-// -----------------------------------------------------------------------------
-
-#module-slideshow-banner-full-screen { 
-	background-color: transparent; 
-	overflow: hidden;
-	
-	.cycle-slide {
+	&__slide {
 		width: 100%; 
 		height: 100%; 
 		background-size: cover;
 		background-position: center center;
 		
 		.container {
-			
-			.cycle-overlay {
-				background-color: $slides-overlay-background-color; 
-				color: $slides-overlay-text-color;  
-				width: 30rem; 
-				padding: 2rem; 
-				position: absolute; 
-				top: 0; 
-				left: 1.5rem;
-				
-				h3 {
-					color: $color-white;
-				}
-				p {
-					margin-bottom: 2rem;
-				}
-				
-				a.link {
-					display: inline-block; 
-					line-height: $button-line-height; 
-					background-color: $button-background-color; 
-					color: $button-text-color;  
-					padding: $button-padding; 
-					font-size: $button-font-size; 
-					text-transform: uppercase;
-					
-					@include on-event {
-						background-color: $button-background-hover-color; 
-						color: $button-text-hover-color;
-					}
-				}
-			}
-			
+			height: 100%;
 		}
 	}
 }
+
 #module-slideshow-banner-full-screen-scroller {
     p {
         position: absolute;

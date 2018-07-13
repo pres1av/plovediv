@@ -11,9 +11,9 @@ Template Name: Posts Single Template
 
 
 
-<div class="posts single id<?php echo $post->ID; ?>">
+<main class="posts single id<?php echo $post->ID; ?>">
 
-	<div class="section padding-top padding-bottom">
+	<div class="main-content padding-top padding-bottom">
 		<div class="container">
 					
 			<div class="row">
@@ -22,7 +22,7 @@ Template Name: Posts Single Template
 				
 					<h1 class="posts-section-title"><?php $my_title = get_the_title( get_option('page_for_posts', true) ); echo $my_title; ?></h1>
 		
-					<div class="main-loop-content">
+					<div class="main-content__loop">
 						<?php if(have_posts()) : ?>
 						<?php while(have_posts()) : the_post(); ?>
 							
@@ -82,6 +82,6 @@ Template Name: Posts Single Template
 		</div>
 	</div>
 	
-</div>
+</main>
 
 <?php get_footer(); ?>

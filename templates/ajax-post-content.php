@@ -1,6 +1,6 @@
     			<div class="col-xs-12 col-sm-6 col-md-4">
     
-    				<div class="main-loop-content">
+    				<div class="main-content__loop">
     					
     					<div class="post-container">
     			

@@ -11,7 +11,7 @@ Template Name: Home Page Template
 
 
 
-<div class="page home">
+<main class="page home">
     
 	<?php
     	
@@ -22,14 +22,14 @@ Template Name: Home Page Template
     <?php //get_template_part( 'modules/module', 'slideshow-banner' ); ?>
     <?php get_template_part( 'modules/module', 'slideshow-banner-full-screen' ); ?>
 	
-	<div class="section padding-top padding-bottom">
+	<section class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
 			
 				<div class="col col-sm-6 col-md-8">
 					
-					<div class="main-loop-content">
+					<div class="main-content__loop">
 						
 						<?php if(have_posts()) : ?>
 						<?php while(have_posts()) : the_post(); ?>
@@ -65,6 +65,6 @@ Template Name: Home Page Template
 	
 	<?php get_sidebar('scrolling-logos'); ?>
 
-</div>
+</main>
 
 	<?php get_footer(); ?>

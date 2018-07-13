@@ -1,0 +1,28 @@
+/* Testimonials */
+.testimonials {
+	margin: 0 0 2rem;
+	
+	quote {
+		background-image: url(images/quote-l.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		font-size: 1.6rem;
+		line-height: 1.5rem;
+		font-weight: normal;
+		padding: 2rem 0 0 2rem;
+		
+		span {
+			background-image: url(images/quote-r.png);
+			background-position: right bottom;
+			background-repeat: no-repeat;
+			padding: 0 2rem 2rem 0;
+			display: block;
+		}
+	}
+	citation {
+		font-weight: bold;
+		font-size: 1.3rem;
+		padding-left: 2rem;
+		margin-bottom: 0;
+	}
+}

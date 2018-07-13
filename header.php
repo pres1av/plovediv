@@ -6,9 +6,6 @@
 	
 	<?php wp_head(); ?>
 	
-	<script type="text/javascript" src="//use.typekit.net/vtj1qog.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	
 	<!-- UNCOMMENT FOR RESPONSIVE -->
 	<meta name="viewport" content="width=device-width" >
 	<!-- FOR WORDPRESS TOP BAR WHEN LOGGED IN -->
@@ -55,8 +52,6 @@
 </head>
 <body<?php if(only_show_if_anyone_loggedin() == true) { ?> class="logged-in"<?php } ?>>
 	
-<div id="container">
-	
 	<div><a id="top"></a></div>
 	
 	<?php/*
@@ -79,7 +74,7 @@
 	
 	<div id="responsive-menu" class="responsive-menu"></div>
 	
-	<div id="responsive-bar" class="page-section-back group display-none">
+	<div id="responsive-bar" class="responsive-bar display-none">
 		<div class="responsive-bar-inner">
 			<a id="responsive-menu-button">
 				

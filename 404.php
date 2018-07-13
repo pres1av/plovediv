@@ -11,9 +11,9 @@ Template Name: 404 Page
 
 
 
-<div class="page 404">
+<main class="page 404">
 
-	<div class="section padding-top padding-bottom">
+	<div class="main-content padding-top padding-bottom">
 		<div class="container">
 					
 			<div class="row">
@@ -36,6 +36,6 @@ Template Name: 404 Page
 		</div>
 	</div>
 	
-</div>
+</main>
 
 <?php get_footer(); ?>

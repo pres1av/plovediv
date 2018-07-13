@@ -1,0 +1,26 @@
+/* 
+.	Cycle Overlay 
+.	--------------------------------------------------------------------
+*/
+
+.cycle-overlay {
+	background-color: $slides-overlay-background-color; 
+	color: $slides-overlay-text-color; 
+	width: 30rem; 
+	padding: 2rem; 
+	position: absolute; 
+	top: 0; 
+	left: 1.5rem;
+				
+	&__heading {
+		color: $color-white;
+	}
+				
+	&__text {
+		margin-bottom: 2rem;
+	}
+				
+	&__button {
+		text-transform: uppercase;
+	}
+}

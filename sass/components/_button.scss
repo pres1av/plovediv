@@ -1,0 +1,32 @@
+/* 
+.	Buttons 
+.	--------------------------------------------------------------------
+*/
+
+.btn, .button {
+	
+	&,
+	&:link,
+	&:visited {
+		display:inline-block; 
+		line-height: $button-line-height; 
+		background-color: $button-background-color;
+		color: $button-text-color;  
+		padding: $button-padding; 
+		font-size: $button-font-size;
+		margin-bottom: 2rem;
+	}
+	
+	&:hover {
+		background-color: $button-background-hover-color;
+		color: $button-text-hover-color;
+		@include transform(translateY(-3px));
+		@include box-shadow(0 1rem 2rem rgba($color-off-black, .5));
+	}
+	
+	&:active,
+    &:focus {
+	    @include transform(translateY(-1px));
+		@include box-shadow(0 .5rem 1rem rgba($color-off-black, .5));
+    }
+}

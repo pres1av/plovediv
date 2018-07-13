@@ -1,7 +1,6 @@
 (function($) {
 	
 	//Main elements
-	var container = $('#container');
 	var responsiveBar = $('#responsive-bar');
 	var responsiveMenu = $('#responsive-menu');
 	var responsiveMenuButton = $('#responsive-menu-button');
@@ -9,11 +8,7 @@
 	var scrollingLogos = $('#scrolling-logos');
 	var scrollingLogosInner = $('#scrolling-logos-inner');
 	    
-	//Responsive Classes
-	var desktopClass = 'responsive-960-plus';
-	var tabletClass = 'responsive-768-960';
-	var phoneClass = 'responsive-516-768';
-	var smallPhoneClass = 'responsive-516-and-under';
+	//Classes
 	var activateClass = 'activate';
 	
 	//Toggle display-none class ON/OFF
@@ -186,7 +181,7 @@
     		
     		responsiveMenu.removeClass(activateClass);
     		
-    		if ($(window).width() < 960) {
+    		if ($(window).width() <= 900) {
     		
 				toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'remove');
 
@@ -195,28 +190,7 @@
     			
     		}
     		
-    		if ($(window).width() < 516) {
-    						
-    			container.removeClass(desktopClass + ' ' + tabletClass + ' ' + phoneClass);
-    			container.addClass(smallPhoneClass);
-    			
-    		}
-    		
-    		if (($(window).width() >= 516) && ($(window).width() < 768)) {
-    						
-    			container.removeClass(desktopClass + ' ' + tabletClass + ' ' + smallPhoneClass);
-    			container.addClass(phoneClass);
-    			
-    		}
-    		
-    		if (($(window).width() >= 768) && ($(window).width() < 960)) {
-    						
-    			container.removeClass(desktopClass + ' ' + phoneClass + ' ' + smallPhoneClass);
-    			container.addClass(tabletClass);
-    			
-    		}
-    		
-    		if ($(window).width() >= 960) {
+    		if ($(window).width() > 900) {
     			
     			
     			toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'add');
@@ -224,9 +198,6 @@
     			responsiveMenu.children('.menu-top-menu-container').appendTo(topMenu);
     			
     			responsiveBar.children('#user-menu').appendTo(topMenu);
-    			
-    			container.addClass(desktopClass);
-    			container.removeClass(tabletClass + ' ' + phoneClass + ' ' + smallPhoneClass);
     			
     		}
     		

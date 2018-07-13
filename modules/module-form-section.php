@@ -1,7 +1,7 @@
 	<?php //To specify left and right form fields add these classes within the Gravity Form editor ?>
 	
 	
-	<div id="form-section" class="section padding-top padding-bottom">
+	<section class="form-section padding-top padding-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col col-xs-12">
@@ -19,4 +19,4 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>

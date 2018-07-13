@@ -305,23 +305,30 @@ hr {
   padding-right: 15px;
   max-width: $grid-width;
 }
+
 /*
 @media (min-width: 601px) {
   .container {
-    width: 630px;
+    width: 40rem;
   }
 }
 @media (min-width: 901px) {
   .container {
-    width: 930px;
+    width: 60rem;
   }
 }
 @media (min-width: 1201px) {
   .container {
-    width: 1280px;
+    width: 90rem;
+  }
+}
+@media (min-width: 1601px) {
+  .container {
+    width: $grid-width;
   }
 }
 */
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;

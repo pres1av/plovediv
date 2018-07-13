@@ -11,7 +11,7 @@ Template Name: Posts Template
 
 
 
-<div class="posts index id<?php echo $post->ID; ?>">
+<main class="posts index id<?php echo $post->ID; ?>">
 
 	<?php /*<div class="section padding-top padding-bottom">
 		<div class="container">
@@ -34,7 +34,7 @@ Template Name: Posts Template
 		
 		</div>
 	</div> */ ?>
-	<div id="news-new" class="section padding-top padding-bottom">
+	<div id="news-new" class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
@@ -56,6 +56,6 @@ Template Name: Posts Template
 	</div>
 					
 	
-</div>
+</main>
 
 <?php get_footer(); ?>

@@ -11,10 +11,10 @@ Template Name: Page Template
 
 
 
-<div class="page id<?php echo $post->ID; ?>">
+<main class="page id<?php echo $post->ID; ?>">
 	
 	
-	<div class="section padding-top padding-bottom">
+	<div class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
@@ -34,6 +34,6 @@ Template Name: Page Template
 		</div>
 	</div>
 	
-</div>
+</main>
 
 	<?php get_footer(); ?>

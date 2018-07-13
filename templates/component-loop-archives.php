@@ -1,4 +1,4 @@
-<div class="main-loop-content">
+<div class="main-content__loop">
 	
 	<?php if ((get_previous_posts_link('&laquo; Previous', $wp_query->max_num_pages)) || (get_next_posts_link( '&raquo; Next', $wp_query->max_num_pages ))) : // Conditional to show/hide Next/Prev links <div> ?>
 	

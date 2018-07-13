@@ -1,5 +1,5 @@
-	<div class="section footer">
-		<div class="container padding-bottom">
+	<footer class="footer">
+		<div class="container padding-bottom footer__main-area">
 			
 			<div class="row">
 				
@@ -29,17 +29,13 @@
 			</div>
 							
 		</div>
-		<div class="container">
+		<div class="container footer__copyright">
 			
 			<div class="row">
 				
 				<div class="col-xs-12">
-					
-					<div class="copyright">
 						
 						<p>&copy; Copyright: the Company <?php echo date("Y"); ?>. <a href="http://www.padcreative.co.uk"><span>Website Design:</span> Pad Creative</a>.</p>
-						
-					</div>
 					
 				</div>
 					

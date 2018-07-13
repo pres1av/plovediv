@@ -160,24 +160,9 @@
 		color: red;
 	}
 	
-	::-webkit-input-placeholder {
-		color: $color-off-black;
-	}
-	
-	:-moz-placeholder {
+	@include placeholder {
 		color: $color-off-black;
 		opacity: 1;
-		line-height: normal;
-	}
-	
-	::-moz-placeholder {
-		color: $color-off-black;
-		opacity: 1;
-		line-height: normal;
-	}
-	
-	:-ms-input-placeholder {
-		color: $color-off-black;
 		line-height: normal;
 	}
 	
@@ -203,7 +188,7 @@
         padding: .5rem;
         
         .ui-corner-all {
-            @include button-style();
+            //@include button-style();
             padding: .5rem 1rem;
             font-size: 1.3rem;
             background-color: $color-off-black;
