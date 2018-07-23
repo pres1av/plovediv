@@ -33,7 +33,7 @@
 }
 
 /// Center an absolutely positioned element inside its parent
-@mixin absCenter {
+@mixin abs-center {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -71,7 +71,7 @@
 
 /// Prefixes for placeholder CSS pseudo-element
 @mixin placeholder {
-	::-webkit-input-placeholder { @content } 
-	:-ms-input-placeholder { @content }
-	::placeholder { @content }
+	&::-webkit-input-placeholder { @content } 
+	&:-ms-input-placeholder { @content }
+	&::placeholder { @content }
 }

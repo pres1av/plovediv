@@ -7,7 +7,7 @@
     			<p class="header__email"><?php the_field('email_address','options'); ?></p>
     		</div>
     		<div class="header__logo-box">
-    			<a href="<?php bloginfo('url') ?>/" title="Go to the home page">
+    			<a href="<?php echo home_url() ?>/" title="Go to the home page">
 	    			<img class="header__logo" src="<?php //bloginfo('template_directory') ?>http://www.padcreative.co.uk/wp-content/themes/pad/images/logo_pad_creative.png" alt="Company Strapline">
 	    		</a>
     		</div>

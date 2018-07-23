@@ -1547,6 +1547,10 @@ html, body {
     overflow: hidden;
     height: 100%; }
 
+::selection {
+  background-color: #767479;
+  color: #fff; }
+
 .container {
   max-width: 128rem;
   position: relative; }
@@ -2017,7 +2021,7 @@ p.intro {
   .header__fixed.scrolling .container {
     height: 9rem; }
   @media only screen and (max-width: 56.25em) {
-    .header__fixed:not(.header__fixed--overlay) {
+    .header__fixed.header__fixed--regular {
       position: relative; }
     .header__fixed.scrolling .container {
       height: auto; } }
@@ -2274,6 +2278,11 @@ p.intro {
       left: 100%; }
 
 /* Horizontal Menu */
+.nav-menu--horiz ul:after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .nav-menu--horiz ul li {
   float: left;
   font-size: 1.5rem; }
@@ -2542,15 +2551,15 @@ p.intro {
     color: red; }
   .gravity-form .validation_message {
     color: red; }
-  .gravity-form ::-webkit-input-placeholder {
+  .gravity-form::-webkit-input-placeholder {
     color: #414040;
     opacity: 1;
     line-height: normal; }
-  .gravity-form :-ms-input-placeholder {
+  .gravity-form:-ms-input-placeholder {
     color: #414040;
     opacity: 1;
     line-height: normal; }
-  .gravity-form ::placeholder {
+  .gravity-form::placeholder {
     color: #414040;
     opacity: 1;
     line-height: normal; }

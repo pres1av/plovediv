@@ -1,7 +1,7 @@
 (function($) {
 	
 	//Module elements
-	var moduleFixedHeader = $('.header__fixed');
+	var moduleHeaderFixed = $('.header__fixed');
 	var moduleSlideshowBanner = $('.slideshow-banner');
 	moduleSlideshowBannerFull = $('.slideshow-banner--full-screen');
 	var moduleSlideshowBannerSlide = $('.slideshow-banner .slideshow-banner__slide');
@@ -18,14 +18,14 @@
     // -----------------------------------------------------------------------------
     
     function headerHeightScroll() {
-        var headerOffset = moduleFixedHeader.offset().top; //console.log(headerOffset);
+        var headerOffset = moduleHeaderFixed.offset().top; //console.log(headerOffset);
         
         var wpAdminBar = $('#wpadminbar').height();
         
-        if((headerOffset - wpAdminBar) > 0) {
-            moduleFixedHeader.addClass('scrolling');
+        if( headerOffset - wpAdminBar > 0 ) {
+            moduleHeaderFixed.addClass('scrolling');
         } else {
-            moduleFixedHeader.removeClass('scrolling');
+            moduleHeaderFixed.removeClass('scrolling');
         }
     }
     

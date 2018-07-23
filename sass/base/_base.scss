@@ -60,6 +60,11 @@ html, body {
 	}
 }
 
+::selection {
+	background-color: $background-color-selection;
+	color: $color-selection;
+}
+
 .container {
 	max-width: $grid-width;
 	position: relative;

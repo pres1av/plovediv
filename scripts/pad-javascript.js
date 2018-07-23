@@ -7,6 +7,7 @@
 	var topMenu = $('#top-menu');
 	var scrollingLogos = $('#scrolling-logos');
 	var scrollingLogosInner = $('#scrolling-logos-inner');
+	var formRequiredFields = $('.gravity-form .gfield_contains_required').find('input, textarea, select');
 	    
 	//Classes
 	var activateClass = 'activate';
@@ -157,7 +158,8 @@
     	});*/
     
     			
-    	
+    	// Add required attr to required form fields
+    	formRequiredFields.attr('required', true);
     	
     
 		/* Responsive */
@@ -181,7 +183,7 @@
     		
     		responsiveMenu.removeClass(activateClass);
     		
-    		if ($(window).width() <= 900) {
+    		if ( window.innerWidth <= 900) {
     		
 				toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'remove');
 
@@ -190,7 +192,7 @@
     			
     		}
     		
-    		if ($(window).width() > 900) {
+    		if ( window.innerWidth > 900) {
     			
     			
     			toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'add');

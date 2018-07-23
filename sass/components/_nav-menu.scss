@@ -95,6 +95,13 @@
 /* Horizontal Menu */
 .nav-menu--horiz {
 	ul {
+		
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		
 		li { 
 			float: left;
 			font-size: $nav-font-size;
