@@ -27,7 +27,7 @@ Template Name: Home Page Template
 			
 			<div class="row">
 			
-				<div class="col col-sm-6 col-md-8">
+				<div class="col-sm-6 col-md-8">
 					
 					<div class="main-content__loop">
 						
@@ -46,7 +46,7 @@ Template Name: Home Page Template
 					
 				</div>
 				
-				<div class="col col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-4">
 					
 					<?php get_sidebar('quote-form'); ?>
 					

@@ -12,7 +12,7 @@
 
 // 2. Vendors
 @import
-	'vendor/bootstrap-grid',
+	//'vendor/bootstrap-grid',
 	'vendor/normalize',
 	'vendor/jquery-lightbox';
 
@@ -28,6 +28,8 @@
 @import
 	'layout/header',
 	'layout/footer',
+	//'layout/float-grid',
+	'layout/flex-grid',
 	'layout/header-fixed',
 	'layout/header-static',
 	'layout/slideshow-banner',

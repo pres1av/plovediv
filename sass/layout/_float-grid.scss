@@ -1,0 +1,294 @@
+.container {
+	max-width: $grid-width;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container-fluid {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+.row {
+	@extend .clearfix;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+[class^="col-"] {
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.col {
+	flex: 1;
+  
+	&-xs {
+		
+		&-12 {
+			@include grid(small, 12, false);
+		}
+		
+		&-11 {
+			@include grid(small, 11, false);
+		}
+		
+		&-10 {
+			@include grid(small, 10, false);
+		}
+		
+		&-9 {
+			@include grid(small, 9, false;
+		}
+		
+		&-8 {
+			@include grid(small, 8, false;
+		}
+		
+		&-7 {
+			@include grid(small, 7, false;
+		}
+		
+		&-6 {
+			@include grid(small, 6, false);
+		}
+		
+		&-5 {
+			@include grid(small, 5, false);
+		}
+		
+		&-4 {
+			@include grid(small, 4, false);
+		}
+		
+		&-3 {
+			@include grid(small, 3, false);
+		}
+		
+		&-2 {
+			@include grid(small, 2, false);
+		}
+		
+    	&-1 {
+			@include grid(small, 1, false);
+    	}
+	}
+  
+	&-sm {
+    	
+    	&-12 {
+			@include grid(phone, 12, false);
+		}
+		
+		&-11 {
+			@include grid(phone, 11, false);
+		}
+		
+		&-10 {
+			@include grid(phone, 10, false);
+		}
+		
+		&-9 {
+			@include grid(phone, 9, false);
+		}
+		
+		&-8 {
+			@include grid(phone, 8, false);
+		}
+		
+		&-7 {
+			@include grid(phone, 7, false);
+		}
+		
+		&-6 {
+			@include grid(phone, 6, false);
+		}
+		
+		&-5 {
+			@include grid(phone, 5, false);
+		}
+		
+		&-4 {
+			@include grid(phone, 4, false);
+		}
+		
+		&-3 {
+			@include grid(phone, 3, false);
+		}
+		
+		&-2 {
+			@include grid(phone, 2, false);
+		}
+		
+    	&-1 {
+			@include grid(phone, 1, false);
+    	}
+	}
+  
+	&-md {
+		
+		&-12 {
+			@include grid(tablet-portrait, 12, false);
+		}
+		
+		&-11 {
+			@include grid(tablet-portrait, 11, false);
+		}
+		
+		&-10 {
+			@include grid(tablet-portrait, 10, false);
+		}
+		
+		&-9 {
+			@include grid(tablet-portrait, 9, false);
+		}
+		
+		&-8 {
+			@include grid(tablet-portrait, 8, false);
+		}
+		
+		&-7 {
+			@include grid(tablet-portrait, 7, false);
+		}
+		
+		&-6 {
+			@include grid(tablet-portrait, 6, false);
+		}
+		
+		&-5 {
+			@include grid(tablet-portrait, 5, false);
+		}
+		
+		&-4 {
+			@include grid(tablet-portrait, 4, false);
+		}
+		
+		&-3 {
+			@include grid(tablet-portrait, 3, false);
+		}
+		
+		&-2 {
+			@include grid(tablet-portrait, 2, false);
+		}
+		
+    	&-1 {
+			@include grid(tablet-portrait, 1, false);
+    	}
+	}
+  
+	&-lg {
+    	
+    	&-12 {
+			@include grid(tablet-landscape, 12, false);
+		}
+		
+		&-11 {
+			@include grid(tablet-landscape, 11, false);
+		}
+		
+		&-10 {
+			@include grid(tablet-landscape, 10, false);
+		}
+		
+		&-9 {
+			@include grid(tablet-landscape, 9, false);
+		}
+		
+		&-8 {
+			@include grid(tablet-landscape, 8, false);
+		}
+		
+		&-7 {
+			@include grid(tablet-landscape, 7, false);
+		}
+		
+		&-6 {
+			@include grid(tablet-landscape, 6, false);
+		}
+		
+		&-5 {
+			@include grid(tablet-landscape, 5, false);
+		}
+		
+		&-4 {
+			@include grid(tablet-landscape, 4, false);
+		}
+		
+		&-3 {
+			@include grid(tablet-landscape, 3, false);
+		}
+		
+		&-2 {
+			@include grid(tablet-landscape, 2, false);
+		}
+		
+    	&-1 {
+			@include grid(tablet-landscape, 1, false);
+    	}
+	}
+  
+	&-xl {
+    	
+    	&-12 {
+			@include grid(desktop, 12, false);
+		}
+		
+		&-11 {
+			@include grid(desktop, 11, false);
+		}
+		
+		&-10 {
+			@include grid(desktop, 10, false);
+		}
+		
+		&-9 {
+			@include grid(desktop, 9, false);
+		}
+		
+		&-8 {
+			@include grid(desktop, 8, false);
+		}
+		
+		&-7 {
+			@include grid(desktop, 7, false);
+		}
+		
+		&-6 {
+			@include grid(desktop, 6, false);
+		}
+		
+		&-5 {
+			@include grid(desktop, 5, false);
+		}
+		
+		&-4 {
+			@include grid(desktop, 4, false);
+		}
+		
+		&-3 {
+			@include grid(desktop, 3, false);
+		}
+		
+		&-2 {
+			@include grid(desktop, 2, false);
+		}
+		
+    	&-1 {
+			@include grid(desktop, 1, false);
+    	}
+    }
+}
+
+
+
+
+
+

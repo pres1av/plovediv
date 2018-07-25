@@ -46,6 +46,26 @@
     @media only screen and (max-width: map-get($breakpoints, $breakpoint)) { @content };
 }
 
+@mixin grid($breakpoint, $count, $flex: true) {
+  
+	@media only screen and (min-width: map-get($breakpoints, $breakpoint) + 0.0625) {
+    	float: left;
+		width: calc(100%/(12/#{$count}));
+		
+		@if $flex {
+			@supports 	(display: flex) or
+						(display: -webkit-flex) or
+						(display: -ms-flexbox) or
+						(display: -webkit-box) {
+							
+	    		flex-basis: calc(100%/(12/#{$count}));
+				width: auto;
+				float: none;
+	    	}
+	    }
+	}
+}
+
 /// Prefixes for transition CSS rule
 /// @param {List of Strings} $transition
 @mixin transition($transition...) {
@@ -67,6 +87,20 @@
 	-webkit-transform: $transform;  
     -ms-transform: $transform;  
     transform: $transform;
+}
+
+@mixin flex {
+	@supports 	(display: flex) or
+				(display: -webkit-flex) or
+				(display: -ms-flexbox) or
+				(display: -webkit-box) {
+					
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					@content;
+	}
 }
 
 /// Prefixes for placeholder CSS pseudo-element
