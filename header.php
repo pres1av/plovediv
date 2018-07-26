@@ -43,7 +43,7 @@
     =====================================
     
 		<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/cookie-compliance/cookie-compliance-wp.js"></script>
-		<link type="text/css" href="<?php bloginfo('template_directory') ?>/cookie-compliance/stylesheet.css" rel="stylesheet">
+		
     <!--
     END
     =====================================
@@ -54,21 +54,21 @@
 	
 	<div><a id="top"></a></div>
 	
-	<?php/*
+	<!--
     =====================================
     UNCOMMENT COOKIE WARNING MESSAGE
-    =====================================
+    ===================================== 
     
-		<div id="cookieMessageWrapper">
-			<div id="cookieMessage">
-				<a id="cookieClose" href="#"></a>
-				<p><strong>This site uses cookies.</strong> You can read how we use them in our <a href="#">privacy policy</a>.</p>
+		<div id="cookieMessageWrapper" class="cookie-message">
+			<div id="cookieMessage" class="cookie-message__inner">
+				<a id="cookieClose" class="cookie-message__close-btn" href="#"></a>
+				<p class="cookie-message__content"><strong>This site uses cookies.</strong> You can read how we use them in our <a href="#" class="cookie-message__privacy-link">privacy policy</a>.</p>
 			</div>
 		</div>
-    <!--
+		
     END
     =====================================
-    */ ?>
+    -->
     
     
 	

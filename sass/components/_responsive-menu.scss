@@ -4,7 +4,7 @@
 */
 
 .responsive-menu{ 
-	left: -50%; 
+	left: -100%; 
 	position: absolute; 
 	position: fixed; 
 	height: 100%; 
@@ -49,7 +49,6 @@
 		color: $color-white; 
 		line-height: 2.4rem; 
 		background-color: $color-dark-grey;
-		background-image: -webkit-linear-gradient($color-dark-grey, $color-very-dark-grey);
 		background-image: linear-gradient($color-dark-grey, $color-very-dark-grey); 
 		@include box-shadow (0 5px 5px 3px rgba($color-black, 0.2));
 	}

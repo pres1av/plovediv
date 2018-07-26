@@ -94,13 +94,19 @@
 
 /* Horizontal Menu */
 .nav-menu--horiz {
+	
 	ul {
+		@include flex {
+			
+		}
 		
-		&:after {
+		&::after {
 			content: '';
 			display: table;
 			clear: both;
 		}
+		
+		
 		
 		li { 
 			float: left;
@@ -115,8 +121,14 @@
 	} 
 }
 
-.nav-menu--horiz-right ul {
-	float: right;
+.nav-menu--horiz-right {
+	
+	ul {
+		float: right;
+		@include flex {
+				
+		}
+	}
 }
 
 /* Top Menu */

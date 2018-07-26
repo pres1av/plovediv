@@ -19,6 +19,7 @@
 }
 
 #module-slideshow-banner-full-screen-scroller {
+	
     p {
         position: absolute;
         width: 100%;
@@ -27,6 +28,7 @@
         font-size: 1.5rem;
         z-index: 150;
         margin-bottom: 0;
+        
         a {
             color: $color-white;
         }

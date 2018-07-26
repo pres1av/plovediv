@@ -1,0 +1,67 @@
+.section-tabs {
+	
+	background: $color-white;
+	position: relative;
+	z-index: 100;
+	
+	.container {
+		flex-basis: 100%;
+	}
+
+	input {
+		position: absolute;
+		visibility: hidden;
+			
+		&#tab-1:checked ~ .container #content-1,
+		&#tab-2:checked ~ .container #content-2,
+		&#tab-3:checked ~ .container #content-3,
+		&#tab-4:checked ~ .container #content-4,
+		&#tab-5:checked ~ .container #content-5 {
+		    display: block;
+		    z-index: 150;
+		}
+			
+		&:checked + label {
+			background: $color-off-black;
+			cursor: default;
+		}
+			
+		&.visible {
+			visibility: visible !important;
+		}
+	}
+		
+	&__label {
+		padding: 1rem 0;
+		font-size: 1.8rem;
+		font-weight: $bold-font-weight;
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-white;
+		background: #7D7BA0;
+		display: block;
+		float: left;
+		width: 20%;
+		
+		@supports 	(display: flex) or
+					(display: -webkit-flex) or
+					(display: -ms-flexbox) or
+					(display: -webkit-box) {
+							
+	    	flex: 1;
+			width: auto;
+			float: none;
+	    }
+					
+		&:hover {
+			background: $color-off-black;
+			cursor: pointer;
+		}	
+	}
+	
+	&__content {
+		position: relative;
+		display: none;
+		z-index: -100;
+	}
+}

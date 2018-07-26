@@ -11,6 +11,11 @@
 	position: absolute; 
 	top: 0; 
 	left: 1.5rem;
+	
+	@include flex {
+		flex-direction: column;
+		justify-content: space-between;
+	}
 				
 	&__heading {
 		color: $color-white;
@@ -22,5 +27,6 @@
 				
 	&__button {
 		text-transform: uppercase;
+		align-self: center;
 	}
 }

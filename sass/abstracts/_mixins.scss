@@ -40,6 +40,15 @@
     transform: translate(-50%, -50%);
 }
 
+/// Center an inside element with flexbox
+@mixin flex-center {
+	@include flex {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 /// Organise responsive media queries
 /// @param {String} $breakpoint
 @mixin responsive($breakpoint) {

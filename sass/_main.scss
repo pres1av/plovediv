@@ -38,6 +38,8 @@
 
 // 5. Components
 @import
+	'components/tabs',
+	'components/cookie-banner',
 	'components/responsive-bar',
 	'components/responsive-menu',
 	'components/nav-menu',
@@ -46,8 +48,7 @@
 	'components/slider',
 	'components/scrolling-logos',
 	'components/gravity-form',
-	'components/testimonials',
-	'components/cookie-banner';
+	'components/testimonials';
 	
 // 6. Themes
 @import

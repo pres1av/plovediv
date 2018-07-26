@@ -64,6 +64,8 @@ Template Name: Home Page Template
 	<?php get_template_part( 'modules/module', 'form-section' ); ?>
 	
 	<?php get_sidebar('scrolling-logos'); ?>
+	
+	<?php get_template_part( 'modules/module', 'tabs-section' ); ?>
 
 </main>
 
