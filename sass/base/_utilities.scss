@@ -43,6 +43,13 @@
 	display: none !important;
 }
 
+.column {
+	@include flex {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+
 .relative {
 	position: relative;
 }

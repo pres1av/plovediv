@@ -4,7 +4,7 @@
 	position: relative;
 	z-index: 100;
 	
-	.container {
+	&__container {
 		flex-basis: 100%;
 	}
 
@@ -12,11 +12,11 @@
 		position: absolute;
 		visibility: hidden;
 			
-		&#tab-1:checked ~ .container #content-1,
-		&#tab-2:checked ~ .container #content-2,
-		&#tab-3:checked ~ .container #content-3,
-		&#tab-4:checked ~ .container #content-4,
-		&#tab-5:checked ~ .container #content-5 {
+		&#tab-1:checked ~ .section-tabs__container #content-1,
+		&#tab-2:checked ~ .section-tabs__container #content-2,
+		&#tab-3:checked ~ .section-tabs__container #content-3,
+		&#tab-4:checked ~ .section-tabs__container #content-4,
+		&#tab-5:checked ~ .section-tabs__container #content-5 {
 		    display: block;
 		    z-index: 150;
 		}
@@ -60,7 +60,6 @@
 	}
 	
 	&__content {
-		position: relative;
 		display: none;
 		z-index: -100;
 	}

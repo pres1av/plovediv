@@ -12,13 +12,15 @@
 	//Classes
 	var activateClass = 'activate';
 	
-	//Toggle display-none class ON/OFF
-	var toggleDisplayNone = (elem, flag) => elem[flag + 'Class']('display-none');
+	//Toggle display-none class ON/OFF | flag = add or remove
+	var toggleDisplayNone = function(elem, flag) {
+		elem[flag + 'Class']('display-none');
+	}
 	
 	
     /* Home */
     
-    $(document).ready(function(){
+    $(function(){
     	
     	/* Lightbox */
     

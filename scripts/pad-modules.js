@@ -3,14 +3,16 @@
 	//Module elements
 	var moduleHeaderFixed = $('.header__fixed');
 	var moduleSlideshowBanner = $('.slideshow-banner');
-	moduleSlideshowBannerFull = $('.slideshow-banner--full-screen');
+	var moduleSlideshowBannerFull = $('.slideshow-banner--full-screen');
 	var moduleSlideshowBannerSlide = $('.slideshow-banner .slideshow-banner__slide');
 	
-	//Toggle display-none class ON/OFF
-	var toggleDisplayNone = (elem, flag) => elem[flag + 'Class']('display-none');
+	//Toggle display-none class ON/OFF | flag is add or remove
+	var toggleDisplayNone = function(elem, flag) {
+		elem[flag + 'Class']('display-none');
+	}
 
 	
-    $(document).ready(function(){
+    $(function(){
         
     
     // -----------------------------------------------------------------------------

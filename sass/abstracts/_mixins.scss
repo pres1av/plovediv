@@ -37,7 +37,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    @include transform(translate(-50%, -50%));
 }
 
 /// Center an inside element with flexbox
@@ -92,10 +92,15 @@
 
 /// Prefixes for transform CSS rule
 /// @param {List of Strings} $transform
-@mixin transform($transform) {
+@mixin transform($transform...) {
 	-webkit-transform: $transform;  
     -ms-transform: $transform;  
     transform: $transform;
+}
+
+@mixin animation($animation...) {
+	-webkit-animation: $animation;
+	animation: $animation;
 }
 
 @mixin flex {
@@ -117,4 +122,15 @@
 	&::-webkit-input-placeholder { @content } 
 	&:-ms-input-placeholder { @content }
 	&::placeholder { @content }
+}
+
+@mixin keyframes($name) {
+	
+	@-webkit-keyframes #{$name} {
+	    @content; 
+	}
+  
+	@keyframes #{$name} {
+    	@content; 
+	}
 }
