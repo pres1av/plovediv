@@ -42,7 +42,7 @@
 		
 		<div class="row">
     		
-    		<div class="col col-xs-12">
+    		<div class="col-xs-12">
         		
         		<p><a id="load-more">Load More</a></p>
         		

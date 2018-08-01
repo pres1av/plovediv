@@ -1,4 +1,4 @@
-<div class="gravity-form group">
+<div class="gravity-form">
 	
 	<h3>Get In Touch</h3>
 	

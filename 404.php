@@ -13,12 +13,12 @@ Template Name: 404 Page
 
 <main class="page 404">
 
-	<div class="main-content padding-top padding-bottom">
+	<section class="main-content padding-top padding-bottom">
 		<div class="container">
 					
 			<div class="row">
 			
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
 								
 					<h1>Unfortunately this page could not be found</h1>
 					
@@ -34,7 +34,7 @@ Template Name: 404 Page
 			</div>
 		
 		</div>
-	</div>
+	</section>
 	
 </main>
 

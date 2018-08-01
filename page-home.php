@@ -53,7 +53,7 @@ Template Name: Home Page Template
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
 	<?php
     	

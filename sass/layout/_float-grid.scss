@@ -287,6 +287,163 @@
     }
 }
 
+.visible {
+	
+	&-xl {
+		display: none !important;
+	
+		@include responsive(desktop) {
+			display: block !important;
+		}
+	}
+	
+	&-lg {
+		display: none !important;
+	
+		@include responsive(tablet-landscape) {
+			display: block !important;
+		}
+	}
+	
+	&-md {
+		display: none !important;
+		
+		@include responsive(tablet-portrait) {
+			display: block !important;
+		}
+	}
+	
+	&-sm {
+		display: none !important;
+		
+		@include responsive(phone) {
+			display: block !important;
+		}
+	}
+	
+	&-xs {
+		display: none !important;
+		
+		@include responsive(small) {
+			display: block !important;
+		}
+	}
+}
+
+table.visible {
+	
+	@include responsive(desktop) {
+		
+		&-xl {
+			display: table !important;
+		}
+	}
+	
+	@include responsive(tablet-landscape) {
+		
+		&-lg {
+			display: table !important;
+		}
+	}
+	
+	@include responsive(tablet-portrait) {
+		
+		&-md {
+			display: table !important;
+		}
+	}
+	
+	@include responsive(phone) {
+		
+		&-sm {
+			display: table !important;
+		}
+	}
+	
+	@include responsive(small) {
+		
+		&-xs {
+			display: table !important;
+		}
+	}
+}
+
+tr.visible {
+	
+	@include responsive(desktop) {
+		
+		&-xl {
+			display: table-row !important;
+		}
+	}
+	
+	@include responsive(tablet-landscape) {
+		
+		&-lg {
+			display: table-row !important;
+		}
+	}
+	
+	@include responsive(tablet-portrait) {
+		
+		&-md {
+			display: table-row !important;
+		}
+	}
+	
+	@include responsive(phone) {
+		
+		&-sm {
+			display: table-row !important;
+		}
+	}
+	
+	@include responsive(small) {
+		
+		&-xs {
+			display: table-row !important;
+		}
+	}
+}
+
+th.visible,
+td.visible {
+	
+	@include responsive(desktop) {
+		
+		&-xl {
+			display: table-cell !important;
+		}
+	}
+	
+	@include responsive(tablet-landscape) {
+		
+		&-lg {
+			display: table-cell !important;
+		}
+	}
+	
+	@include responsive(tablet-portrait) {
+		
+		&-md {
+			display: table-cell !important;
+		}
+	}
+	
+	@include responsive(phone) {
+		
+		&-sm {
+			display: table-cell !important;
+		}
+	}
+	
+	@include responsive(small) {
+		
+		&-xs {
+			display: table-cell !important;
+		}
+	}
+}
 
 
 

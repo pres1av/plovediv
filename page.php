@@ -14,12 +14,12 @@ Template Name: Page Template
 <main class="page id<?php echo $post->ID; ?>">
 	
 	
-	<div class="main-content padding-top padding-bottom">
+	<section class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
 			
-				<div class="col col-sm-6 col-md-8">
+				<div class="col-sm-6 col-md-8">
 					
 					<?php get_template_part( 'templates/component', 'loop-default' ); ?>
 					
@@ -32,7 +32,7 @@ Template Name: Page Template
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	
 </main>
 

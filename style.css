@@ -1620,6 +1620,101 @@ p.intro {
           width: auto;
           float: none; } } }
 
+.visible-xl {
+  display: none !important; }
+  @media only screen and (max-width: 100em) {
+    .visible-xl {
+      display: block !important; } }
+
+.visible-lg {
+  display: none !important; }
+  @media only screen and (max-width: 80em) {
+    .visible-lg {
+      display: block !important; } }
+
+.visible-md {
+  display: none !important; }
+  @media only screen and (max-width: 56.25em) {
+    .visible-md {
+      display: block !important; } }
+
+.visible-sm {
+  display: none !important; }
+  @media only screen and (max-width: 37.5em) {
+    .visible-sm {
+      display: block !important; } }
+
+.visible-xs {
+  display: none !important; }
+  @media only screen and (max-width: 25em) {
+    .visible-xs {
+      display: block !important; } }
+
+@media only screen and (max-width: 100em) {
+  table.visible-xl {
+    display: table !important; } }
+
+@media only screen and (max-width: 80em) {
+  table.visible-lg {
+    display: table !important; } }
+
+@media only screen and (max-width: 56.25em) {
+  table.visible-md {
+    display: table !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  table.visible-sm {
+    display: table !important; } }
+
+@media only screen and (max-width: 25em) {
+  table.visible-xs {
+    display: table !important; } }
+
+@media only screen and (max-width: 100em) {
+  tr.visible-xl {
+    display: table-row !important; } }
+
+@media only screen and (max-width: 80em) {
+  tr.visible-lg {
+    display: table-row !important; } }
+
+@media only screen and (max-width: 56.25em) {
+  tr.visible-md {
+    display: table-row !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  tr.visible-sm {
+    display: table-row !important; } }
+
+@media only screen and (max-width: 25em) {
+  tr.visible-xs {
+    display: table-row !important; } }
+
+@media only screen and (max-width: 100em) {
+  th.visible-xl,
+  td.visible-xl {
+    display: table-cell !important; } }
+
+@media only screen and (max-width: 80em) {
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important; } }
+
+@media only screen and (max-width: 56.25em) {
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important; } }
+
+@media only screen and (max-width: 37.5em) {
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important; } }
+
+@media only screen and (max-width: 25em) {
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important; } }
+
 .header__fixed {
   position: fixed;
   z-index: 200;
@@ -2057,9 +2152,9 @@ p.intro {
       display: block;
       margin: 0 auto; }
     #scrolling-logos #scrolling-logos-inner .slick-slide {
-      /*width: 216px !important; 
-			height: 65px; 
-			margin-right: 32px; */
+      /*width: 21.6rem !important; 
+			height: 6.5rem; 
+			margin-right: 3.2rem; */
       vertical-align: top;
       padding: 0 1.5rem; }
       #scrolling-logos #scrolling-logos-inner .slick-slide img {
@@ -2073,10 +2168,10 @@ p.intro {
     #scrolling-logos .prev-next:hover {
       background-position: center bottom; }
   #scrolling-logos #prev {
-    background-image: url(images/prev.png);
+    background-image: url("images/prev.png");
     left: -3rem; }
   #scrolling-logos #next {
-    background-image: url(images/next.png);
+    background-image: url("images/next.png");
     right: -3rem; }
 
 /* 

@@ -6,7 +6,9 @@
   "scripts": {
     "prefix:css": "postcss style.css --use autoprefixer -o style.css",
     "compress:css": "node-sass style.css style.min.css --output-style compressed",
-    "build:css": "npm-run-all prefix:css compress:css"
+    "build:css": "npm-run-all prefix:css compress:css",
+    "merg-min:js": "uglifyjs scripts/pad-javascript.js scripts/pad-modules.js --compress --output scripts/pad.min.js",
+    "final-build": "npm-run-all build:css merg-min:js"
   },
   "repository": {
     "type": "git",
@@ -19,18 +21,18 @@
   "author": "Stefan Staykov, Pad Creative",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/padcreative/jifflr/issues"
+    "url": "https://github.com/padcreative/pad-template/issues"
   },
-  "homepage": "https://github.com/padcreative/jifflr#readme",
+  "homepage": "https://github.com/padcreative/pad-template#readme",
   "devDependencies": {
     "autoprefixer": "^9.0.1",
     "node-sass": "^4.9.2",
     "npm-run-all": "^4.1.3",
-    "postcss-cli": "^6.0.0"
+    "postcss-cli": "^6.0.0",
+    "uglify-js": "^3.4.6"
   },
   "browserslist": [
-    "last 3 version",
-    "> 1%",
-    "IE 8"
+    "last 5 version",
+    "> 1%"
   ]
 }

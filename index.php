@@ -34,12 +34,12 @@ Template Name: Posts Template
 		
 		</div>
 	</div> */ ?>
-	<div id="news-new" class="main-content padding-top padding-bottom">
+	<section id="news-new" class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
 			
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
 				
 				
 					<h1>News</h1>
@@ -53,7 +53,7 @@ Template Name: Posts Template
 	
 		</div>
 		
-	</div>
+	</section>
 					
 	
 </main>

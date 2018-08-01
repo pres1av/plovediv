@@ -34,12 +34,12 @@ Template Name: News Page Template
 		
 		</div>
 	</div> */ ?>
-	<div id="news-new" class="main-content padding-top padding-bottom">
+	<section id="news-new" class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
 			
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
 				
 				
             		<?php if ( get_field('long_title') ) : // Get Page Title ?>
@@ -57,7 +57,7 @@ Template Name: News Page Template
 	
 		</div>
 		
-	</div>
+	</section>
 					
 	
 </main>

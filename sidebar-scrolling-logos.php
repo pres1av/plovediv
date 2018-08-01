@@ -1,6 +1,6 @@
 <?php if($slidingLogos = get_field('scrolling_logos','options')): //print_r($slidingLogos); ?>
 
-<div class="section padding-bottom">
+<section class="padding-bottom">
 	<div class="container">
 	
 		<?php /*<div class="row">
@@ -29,6 +29,6 @@
 		</div>*/ ?>
 		
 	</div>
-</div>
+</section>
 
 <?php endif; ?>

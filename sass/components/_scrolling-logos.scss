@@ -19,9 +19,9 @@
 		}
 		
 		.slick-slide {
-			/*width: 216px !important; 
-			height: 65px; 
-			margin-right: 32px; */
+			/*width: 21.6rem !important; 
+			height: 6.5rem; 
+			margin-right: 3.2rem; */
 			vertical-align: top;
 			padding: 0 1.5rem;
 			
@@ -44,12 +44,12 @@
 	}
 	
 	#prev {
-		background-image: url(images/prev.png); 
+		background-image: image('prev.png'); 
 		left: -3rem;
 	}
 	
 	#next {
-		background-image: url(images/next.png); 
+		background-image: image('next.png'); 
 		right: -3rem;		
 	}
 }

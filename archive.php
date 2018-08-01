@@ -46,12 +46,12 @@ Template Name: Posts Archive Template
 		</div>
 	</div> */ ?>
 	
-	<div id="news-new" class="main-content padding-top padding-bottom">
+	<section id="news-new" class="main-content padding-top padding-bottom">
 		<div class="container">
 			
 			<div class="row">
 			
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
 				
 				
 					<?php $post = $posts[0]; ?>
@@ -74,7 +74,7 @@ Template Name: Posts Archive Template
 	
 		</div>
 		
-	</div>
+	</section>
 					
 	
 	

@@ -43,7 +43,7 @@
 		
 		<div id="load-more" class="row">
     		
-    		<div class="col col-xs-12">
+    		<div class="col-xs-12">
         		
         		<?php /*<p><a id="load-more">Load More</a></p>*/ ?>
         		
