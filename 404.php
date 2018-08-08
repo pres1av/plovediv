@@ -11,7 +11,7 @@ Template Name: 404 Page
 
 
 
-<main class="page 404">
+<main class="main">
 
 	<section class="main-content padding-top padding-bottom">
 		<div class="container">

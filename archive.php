@@ -11,7 +11,7 @@ Template Name: Posts Archive Template
 
 
 
-<main class="posts archive id<?php echo $post->ID; ?>">
+<main class="main">
 
 	<?php /*<div class="section padding-top padding-bottom">
 		<div class="container">

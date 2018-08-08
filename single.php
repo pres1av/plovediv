@@ -11,7 +11,7 @@ Template Name: Posts Single Template
 
 
 
-<main class="posts single id<?php echo $post->ID; ?>">
+<main class="main">
 
 	<section class="main-content padding-top padding-bottom">
 		<div class="container">

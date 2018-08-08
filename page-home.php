@@ -11,7 +11,7 @@ Template Name: Home Page Template
 
 
 
-<main class="page home">
+<main class="main">
     
 	<?php
     	

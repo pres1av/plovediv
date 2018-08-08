@@ -60,6 +60,7 @@ html, body {
 	}
 }
 
+::-moz-selection,
 ::selection {
 	background-color: $background-color-selection;
 	color: $color-selection;

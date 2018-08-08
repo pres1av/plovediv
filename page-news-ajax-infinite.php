@@ -11,7 +11,7 @@ Template Name: News Page Template
 
 
 
-<main class="posts index id<?php echo $post->ID; ?>">
+<main class="main">
 
     <a id="target"></a>
 

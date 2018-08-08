@@ -50,7 +50,7 @@
     */ ?>
 	
 </head>
-<body<?php if(only_show_if_anyone_loggedin() == true) { ?> class="logged-in"<?php } ?>>
+<body <?php body_class(); ?>>
 	
 	<div><a id="top"></a></div>
 	

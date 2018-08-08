@@ -11,7 +11,7 @@ Template Name: Page Template
 
 
 
-<main class="page id<?php echo $post->ID; ?>">
+<main class="main">
 	
 	
 	<section class="main-content padding-top padding-bottom">
