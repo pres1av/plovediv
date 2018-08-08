@@ -569,7 +569,10 @@ html, body {
     overflow: hidden;
     height: 100%; }
 
-::-moz-selection,
+::-moz-selection {
+  background-color: #767479;
+  color: #fff; }
+
 ::selection {
   background-color: #767479;
   color: #fff; }
