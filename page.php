@@ -25,7 +25,7 @@ Template Name: Page Template
 					
 				</div>
 				
-				<div class="col col-sm-6 col-md-4">
+				<div class="col-sm-6 col-md-4">
 					
 					<?php get_sidebar('quote-form'); ?>
 					

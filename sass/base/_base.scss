@@ -32,10 +32,14 @@ html {
 	-webkit-text-size-adjust: 100%;
 	
     // This defines what 1rem is
-    font-size: 75%; 							//1 rem = 12px;
+    font-size: 100%; 							//1 rem = 16px;
     
-    @include responsive(desktop) {
-        font-size: 62.5%; 						//1rem = 10px < 1600px
+    @include responsive(hd) {
+        font-size: 68.75%; 						//1rem = 11px < 1920px
+    }
+    
+    @include responsive(big-desktop) {
+        font-size: 62.5%; 						//1rem = 10px < 1800px
     }
 
     @include responsive(tablet-landscape) { 

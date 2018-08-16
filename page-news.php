@@ -39,7 +39,7 @@ Template Name: News Page Template
 			
 			<div class="row">
 			
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
 				
 				
             		<?php if ( get_field('long_title') ) : // Get Page Title ?>

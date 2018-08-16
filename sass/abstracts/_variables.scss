@@ -21,7 +21,7 @@ $color-very-light-grey: #d4d7d7;
 
 /// Basic Text Colour
 /// @type Color
-$text-color: #414040;
+$text-color: $color-off-black;
 $main-link-color: red;
 $main-link-hover: blue;
 
@@ -41,13 +41,13 @@ $h6-font-size: 1.5rem;
 
 /// Basic Line Height
 /// @type Line-height		
-$main-line-height: 1.5rem;
-$heading-line-height: 2rem;
+$main-line-height: 1.2em;
+$heading-line-height: 1.2em;
 
 /// Intro Typography
 /// @type Font-size & Line-height
 $intro-font-size: 2rem;
-$intro-line-height: 1.5rem;
+$intro-line-height: 1.3em;
 
 /// Basic Font Weights
 // @type Font-weight
@@ -57,7 +57,7 @@ $bold-font-weight: 700;
 		
 //Header
 $header-height: 12rem;
-$header-background-color: rgba(255, 255, 255, 0);
+$header-background-color: transparent;
 
 	
 //Navigation
@@ -133,6 +133,7 @@ $breakpoints: (
 	'tablet-landscape': 80em, 		//1280px
 	'desktop': 100em,				//1600px
 	'big-desktop': 112.5em, 		//1800px
+	'hd':  120em					//1920px
 ) !default;
 
 

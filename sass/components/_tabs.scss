@@ -11,6 +11,10 @@
 	input {
 		position: absolute;
 		visibility: hidden;
+		
+		body.IE & {
+			position: relative;
+		}
 			
 		&#tab-1:checked ~ .section-tabs__container #content-1,
 		&#tab-2:checked ~ .section-tabs__container #content-2,
@@ -43,12 +47,9 @@
 		float: left;
 		width: 20%;
 		
-		@supports 	(display: flex) or
-					(display: -webkit-flex) or
-					(display: -ms-flexbox) or
-					(display: -webkit-box) {
+		@supports (display: flex) {
 							
-	    	flex: 1;
+	    	flex: 1 0 20%;
 			width: auto;
 			float: none;
 	    }

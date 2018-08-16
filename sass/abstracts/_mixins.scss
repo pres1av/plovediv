@@ -61,16 +61,8 @@
     	float: left;
 		width: calc(100%/(12/#{$count}));
 		
-		@if $flex {
-			@supports 	(display: flex) or
-						(display: -webkit-flex) or
-						(display: -ms-flexbox) or
-						(display: -webkit-box) {
-							
-	    		flex-basis: calc(100%/(12/#{$count}));
-				width: auto;
-				float: none;
-	    	}
+		@if $flex {		
+	    	flex-basis: calc(100%/(12/#{$count}));
 	    }
 	}
 }
@@ -104,17 +96,9 @@
 }
 
 @mixin flex {
-	@supports 	(display: flex) or
-				(display: -webkit-flex) or
-				(display: -ms-flexbox) or
-				(display: -webkit-box) {
-					
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					@content;
-	}
+	display: -ms-flexbox;
+	display: flex;
+	@content;
 }
 
 /// Prefixes for placeholder CSS pseudo-element

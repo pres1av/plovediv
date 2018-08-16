@@ -23,8 +23,11 @@
 	@include flex {
 		flex-wrap: wrap;
 		
-		&::after {
-			display: none;
+		@supports (display: flex) {
+			
+			&::after {
+				display: none;
+			}
 		}
 	}
 }

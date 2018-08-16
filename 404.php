@@ -28,6 +28,8 @@ Template Name: 404 Page
 						<li>You may have typed the web address incorrectly. Please check the address and spelling ensuring that it does <strong>not</strong> contain capital letters or spaces.</li>
 					
 					</ul>
+					
+					<a href="<?php echo home_url(); ?>" class="btn btn--404">Back to Home</a>
 
 				</div>
 				

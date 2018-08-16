@@ -3,7 +3,7 @@
 	margin: 0 0 2rem;
 	
 	quote {
-		background-image: url(images/quote-l.png);
+		background-image: image('quote-l.png');
 		background-repeat: no-repeat;
 		background-position: left top;
 		font-size: 1.6rem;
@@ -12,7 +12,7 @@
 		padding: 2rem 0 0 2rem;
 		
 		span {
-			background-image: url(images/quote-r.png);
+			background-image: image('quote-r.png');
 			background-position: right bottom;
 			background-repeat: no-repeat;
 			padding: 0 2rem 2rem 0;

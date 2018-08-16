@@ -4,7 +4,7 @@
 	<section class="form-section padding-top padding-bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col col-xs-12">
+				<div class="col-xs-12">
     				
                     <div class="gravity-form group">
                     	

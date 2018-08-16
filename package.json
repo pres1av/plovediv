@@ -32,7 +32,7 @@
     "uglify-js": "^3.4.6"
   },
   "browserslist": [
-    "last 5 version",
-    "> 1%"
+    "cover 99.5%",
+    "IE 9-11"
   ]
 }

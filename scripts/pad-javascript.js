@@ -1,6 +1,8 @@
 (function($) {
 	
 	//Main elements
+	var html = $('html');
+	var body = $('body');
 	var responsiveBar = $('#responsive-bar');
 	var responsiveMenu = $('#responsive-menu');
 	var responsiveMenuButton = $('#responsive-menu-button');
@@ -17,10 +19,31 @@
 		elem[flag + 'Class']('display-none');
 	}
 	
+	// Get the current browser and version | output: Chrome 68
+	var browserVersion = (function() {
+	    var ua = navigator.userAgent, tem, 
+	    M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+	    if(/trident/i.test(M[1])){
+	        tem =  /\brv[ :]+(\d+)/g.exec(ua) || [];
+	        return 'IE '+(tem[1] || '');
+	    }
+	    if(M[1] === 'Chrome'){
+	        tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+	        if(tem != null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+	    }
+	    M = M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, ' ?'];
+	    if((tem = ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+	    return M.join(' ');
+	})();
+	
 	
     /* Home */
     
     $(function(){
+	    
+	    // Adds browser name and version as classes to body
+	    body.addClass(browserVersion);
+	    
     	
     	/* Lightbox */
     
@@ -173,8 +196,21 @@
     		responsiveMenu.toggleClass(activateClass);
     		responsiveMenuButton.toggleClass(activateClass);
 
-    		$('html, body').toggleClass('scroll');
-    		
+    		html.add(body).toggleClass('scroll');
+    		event.stopPropagation();
+    	});
+    	
+    	// Close menu on click outside
+    	html.mouseup(function(e) {
+	    	var target = $(e.target);
+	    	var targetParent = $(e.target.parentElement);
+	    	
+	    	if ( !responsiveMenu.is(targetParent) && !responsiveMenu.is(target) && !responsiveMenuButton.is(targetParent) && !responsiveMenuButton.is(target)) {
+		    	responsiveMenu.removeClass(activateClass);
+				responsiveMenuButton.removeClass(activateClass);
+				
+				html.add(body).removeClass('scroll');
+	    	}
     	});
     	
     
