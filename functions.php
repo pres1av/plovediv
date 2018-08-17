@@ -64,13 +64,13 @@
 
 			//Main Stylesheet and JS
 			$deps = array();
-			wp_register_style( 'pad-theme',get_stylesheet_uri(), $deps, '1.0' );
+			wp_register_style( 'pad-theme', get_stylesheet_uri(), $deps, '1.0' );
 			$deps = array(
 				'jquery',
 				'magnific-js',
 				'slick-js'
 			);
-		    wp_register_script( 'pad-js', get_template_directory_uri().'/scripts/pad-javascript.js', $deps, '1.0', true );
+		    wp_register_script( 'pad', get_template_directory_uri().'/scripts/pad-javascript.js', $deps, null, true );
 		    
 		//Enqueue
 		
@@ -108,7 +108,10 @@
             global $wp_query;           
             wp_localize_script( 'ajax-load-more', 'ajaxloadmore', array(
             	'ajaxurl' => admin_url( 'admin-ajax.php' )
-            ));	
+            ));
+            
+        // Adding the site URL and template URL as a JS object. Usage in pad-javascript: wpURLs.site or wpURLs.template
+        wp_localize_script('pad', 'wpURLs', [ 'site' => home_url(), 'template' => get_bloginfo('template_directory') ]);	
 	    
 	}
 	
