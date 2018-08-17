@@ -1507,7 +1507,7 @@ p.intro {
   .header__fixed.scrolling .container {
     height: 9rem; }
   @media only screen and (max-width: 56.25em) {
-    .header__fixed.header__fixed--regular {
+    .header__fixed:not(--overlay) {
       position: relative; }
     .header__fixed.scrolling .container {
       height: auto; } }
