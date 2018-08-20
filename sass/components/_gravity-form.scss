@@ -26,6 +26,12 @@
 		width: 100%; 
 		font-size: 1rem; 
 		line-height: 1.5rem;
+		
+			@include placeholder {
+				color: $color-off-black;
+				opacity: 1;
+				line-height: normal;
+			}
 	}
 	
 	textarea {
@@ -60,7 +66,6 @@
         		background-position: right center;
         		background-repeat: no-repeat;
         		background-size: 3rem auto;
-        		box-sizing: border-box;
         		height: 3.2rem;
     		}
 		}
@@ -158,12 +163,6 @@
 	
 	.validation_message {
 		color: red;
-	}
-	
-	@include placeholder {
-		color: $color-off-black;
-		opacity: 1;
-		line-height: normal;
 	}
 	
     .gf-left {

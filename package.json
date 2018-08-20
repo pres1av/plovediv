@@ -2,7 +2,7 @@
   "name": "pad-template",
   "version": "1.0.0",
   "description": "WordPress template for Pad Creative",
-  "main": "index.js",
+  "main": "scrpts/pad-javascript.js",
   "scripts": {
     "prefix:css": "postcss style.css --use autoprefixer -o style.css",
     "compress:css": "node-sass style.css style.min.css --output-style compressed",
