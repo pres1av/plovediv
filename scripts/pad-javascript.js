@@ -213,24 +213,20 @@
 	    	}
     	});
     	
+		mediaQueryList = window.matchMedia("(max-width: 56.25em)");
     
-    
-    	function widthchecker() {
-    		
-    		
+    	function widthchecker() {	
     		
     		responsiveMenu.removeClass(activateClass);
     		
-    		if ( window.innerWidth <= 900) {
+    		if ( mediaQueryList.matches ) {
     		
 				toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'remove');
 
     			topMenu.children('.menu-top-menu-container').appendTo(responsiveMenu);
     			
     			
-    		}
-    		
-    		if ( window.innerWidth > 900) {
+    		} else {
     			
     			
     			toggleDisplayNone(responsiveBar.add(responsiveMenu).add(responsiveMenuButton), 'add');

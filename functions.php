@@ -103,7 +103,7 @@
 			//Main Stylesheet and JS
 		    wp_enqueue_script( 'ajax-load-more');
 		    wp_enqueue_style( 'pad-theme' );
-		    wp_enqueue_script('pad-js');
+		    wp_enqueue_script('pad');
             
             global $wp_query;           
             wp_localize_script( 'ajax-load-more', 'ajaxloadmore', array(
