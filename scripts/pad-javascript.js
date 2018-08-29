@@ -191,7 +191,7 @@
 
     	toggleDisplayNone(responsiveBar, 'remove');
 
-    	responsiveMenuButton.click(function(){
+    	responsiveMenuButton.click(function(event){
 
     		responsiveMenu.toggleClass(activateClass);
     		responsiveMenuButton.toggleClass(activateClass);
