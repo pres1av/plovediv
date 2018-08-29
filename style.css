@@ -1097,315 +1097,668 @@ p.intro {
     .row::after {
       display: none; } }
 
-[class^="col-"] {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  flex-basis: 100%; }
-
 .col {
   flex: 1; }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-12 {
-      float: left;
-      width: calc(100%/(12/12));
-      flex-basis: calc(100%/(12/12)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-11 {
-      float: left;
-      width: calc(100%/(12/11));
-      flex-basis: calc(100%/(12/11)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-10 {
-      float: left;
-      width: calc(100%/(12/10));
-      flex-basis: calc(100%/(12/10)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-9 {
-      float: left;
-      width: calc(100%/(12/9));
-      flex-basis: calc(100%/(12/9)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-8 {
-      float: left;
-      width: calc(100%/(12/8));
-      flex-basis: calc(100%/(12/8)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-7 {
-      float: left;
-      width: calc(100%/(12/7));
-      flex-basis: calc(100%/(12/7)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-6 {
-      float: left;
-      width: calc(100%/(12/6));
-      flex-basis: calc(100%/(12/6)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-5 {
-      float: left;
-      width: calc(100%/(12/5));
-      flex-basis: calc(100%/(12/5)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-4 {
-      float: left;
-      width: calc(100%/(12/4));
-      flex-basis: calc(100%/(12/4)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-3 {
-      float: left;
-      width: calc(100%/(12/3));
-      flex-basis: calc(100%/(12/3)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-2 {
-      float: left;
-      width: calc(100%/(12/2));
-      flex-basis: calc(100%/(12/2)); } }
-  @media only screen and (min-width: 25.0625em) {
-    .col-xs-1 {
-      float: left;
-      width: calc(100%/(12/1));
-      flex-basis: calc(100%/(12/1)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-12 {
-      float: left;
-      width: calc(100%/(12/12));
-      flex-basis: calc(100%/(12/12)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-11 {
-      float: left;
-      width: calc(100%/(12/11));
-      flex-basis: calc(100%/(12/11)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-10 {
-      float: left;
-      width: calc(100%/(12/10));
-      flex-basis: calc(100%/(12/10)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-9 {
-      float: left;
-      width: calc(100%/(12/9));
-      flex-basis: calc(100%/(12/9)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-8 {
-      float: left;
-      width: calc(100%/(12/8));
-      flex-basis: calc(100%/(12/8)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-7 {
-      float: left;
-      width: calc(100%/(12/7));
-      flex-basis: calc(100%/(12/7)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-6 {
-      float: left;
-      width: calc(100%/(12/6));
-      flex-basis: calc(100%/(12/6)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-5 {
-      float: left;
-      width: calc(100%/(12/5));
-      flex-basis: calc(100%/(12/5)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-4 {
-      float: left;
-      width: calc(100%/(12/4));
-      flex-basis: calc(100%/(12/4)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-3 {
-      float: left;
-      width: calc(100%/(12/3));
-      flex-basis: calc(100%/(12/3)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-2 {
-      float: left;
-      width: calc(100%/(12/2));
-      flex-basis: calc(100%/(12/2)); } }
-  @media only screen and (min-width: 37.5625em) {
-    .col-sm-1 {
-      float: left;
-      width: calc(100%/(12/1));
-      flex-basis: calc(100%/(12/1)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-12 {
-      float: left;
-      width: calc(100%/(12/12));
-      flex-basis: calc(100%/(12/12)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-11 {
-      float: left;
-      width: calc(100%/(12/11));
-      flex-basis: calc(100%/(12/11)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-10 {
-      float: left;
-      width: calc(100%/(12/10));
-      flex-basis: calc(100%/(12/10)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-9 {
-      float: left;
-      width: calc(100%/(12/9));
-      flex-basis: calc(100%/(12/9)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-8 {
-      float: left;
-      width: calc(100%/(12/8));
-      flex-basis: calc(100%/(12/8)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-7 {
-      float: left;
-      width: calc(100%/(12/7));
-      flex-basis: calc(100%/(12/7)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-6 {
-      float: left;
-      width: calc(100%/(12/6));
-      flex-basis: calc(100%/(12/6)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-5 {
-      float: left;
-      width: calc(100%/(12/5));
-      flex-basis: calc(100%/(12/5)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-4 {
-      float: left;
-      width: calc(100%/(12/4));
-      flex-basis: calc(100%/(12/4)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-3 {
-      float: left;
-      width: calc(100%/(12/3));
-      flex-basis: calc(100%/(12/3)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-2 {
-      float: left;
-      width: calc(100%/(12/2));
-      flex-basis: calc(100%/(12/2)); } }
-  @media only screen and (min-width: 56.3125em) {
-    .col-md-1 {
-      float: left;
-      width: calc(100%/(12/1));
-      flex-basis: calc(100%/(12/1)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-12 {
-      float: left;
-      width: calc(100%/(12/12));
-      flex-basis: calc(100%/(12/12)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-11 {
-      float: left;
-      width: calc(100%/(12/11));
-      flex-basis: calc(100%/(12/11)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-10 {
-      float: left;
-      width: calc(100%/(12/10));
-      flex-basis: calc(100%/(12/10)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-9 {
-      float: left;
-      width: calc(100%/(12/9));
-      flex-basis: calc(100%/(12/9)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-8 {
-      float: left;
-      width: calc(100%/(12/8));
-      flex-basis: calc(100%/(12/8)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-7 {
-      float: left;
-      width: calc(100%/(12/7));
-      flex-basis: calc(100%/(12/7)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-6 {
-      float: left;
-      width: calc(100%/(12/6));
-      flex-basis: calc(100%/(12/6)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-5 {
-      float: left;
-      width: calc(100%/(12/5));
-      flex-basis: calc(100%/(12/5)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-4 {
-      float: left;
-      width: calc(100%/(12/4));
-      flex-basis: calc(100%/(12/4)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-3 {
-      float: left;
-      width: calc(100%/(12/3));
-      flex-basis: calc(100%/(12/3)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-2 {
-      float: left;
-      width: calc(100%/(12/2));
-      flex-basis: calc(100%/(12/2)); } }
-  @media only screen and (min-width: 80.0625em) {
-    .col-lg-1 {
-      float: left;
-      width: calc(100%/(12/1));
-      flex-basis: calc(100%/(12/1)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-12 {
-      float: left;
-      width: calc(100%/(12/12));
-      flex-basis: calc(100%/(12/12)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-11 {
-      float: left;
-      width: calc(100%/(12/11));
-      flex-basis: calc(100%/(12/11)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-10 {
-      float: left;
-      width: calc(100%/(12/10));
-      flex-basis: calc(100%/(12/10)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-9 {
-      float: left;
-      width: calc(100%/(12/9));
-      flex-basis: calc(100%/(12/9)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-8 {
-      float: left;
-      width: calc(100%/(12/8));
-      flex-basis: calc(100%/(12/8)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-7 {
-      float: left;
-      width: calc(100%/(12/7));
-      flex-basis: calc(100%/(12/7)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-6 {
-      float: left;
-      width: calc(100%/(12/6));
-      flex-basis: calc(100%/(12/6)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-5 {
-      float: left;
-      width: calc(100%/(12/5));
-      flex-basis: calc(100%/(12/5)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-4 {
-      float: left;
-      width: calc(100%/(12/4));
-      flex-basis: calc(100%/(12/4)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-3 {
-      float: left;
-      width: calc(100%/(12/3));
-      flex-basis: calc(100%/(12/3)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-2 {
-      float: left;
-      width: calc(100%/(12/2));
-      flex-basis: calc(100%/(12/2)); } }
-  @media only screen and (min-width: 100.0625em) {
-    .col-xl-1 {
-      float: left;
-      width: calc(100%/(12/1));
-      flex-basis: calc(100%/(12/1)); } }
+  .col-xs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-12 {
+        float: left;
+        width: calc(100%/(12/12));
+        flex-basis: calc(100%/(12/12)); } }
+  .col-xs-11 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-11 {
+        float: left;
+        width: calc(100%/(12/11));
+        flex-basis: calc(100%/(12/11)); } }
+  .col-xs-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-10 {
+        float: left;
+        width: calc(100%/(12/10));
+        flex-basis: calc(100%/(12/10)); } }
+  .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-9 {
+        float: left;
+        width: calc(100%/(12/9));
+        flex-basis: calc(100%/(12/9)); } }
+  .col-xs-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-8 {
+        float: left;
+        width: calc(100%/(12/8));
+        flex-basis: calc(100%/(12/8)); } }
+  .col-xs-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-7 {
+        float: left;
+        width: calc(100%/(12/7));
+        flex-basis: calc(100%/(12/7)); } }
+  .col-xs-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-6 {
+        float: left;
+        width: calc(100%/(12/6));
+        flex-basis: calc(100%/(12/6)); } }
+  .col-xs-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-5 {
+        float: left;
+        width: calc(100%/(12/5));
+        flex-basis: calc(100%/(12/5)); } }
+  .col-xs-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-4 {
+        float: left;
+        width: calc(100%/(12/4));
+        flex-basis: calc(100%/(12/4)); } }
+  .col-xs-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-3 {
+        float: left;
+        width: calc(100%/(12/3));
+        flex-basis: calc(100%/(12/3)); } }
+  .col-xs-2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-2 {
+        float: left;
+        width: calc(100%/(12/2));
+        flex-basis: calc(100%/(12/2)); } }
+  .col-xs-1 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 25.0625em) {
+      .col-xs-1 {
+        float: left;
+        width: calc(100%/(12/1));
+        flex-basis: calc(100%/(12/1)); } }
+  .col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-12 {
+        float: left;
+        width: calc(100%/(12/12));
+        flex-basis: calc(100%/(12/12)); } }
+  .col-sm-11 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-11 {
+        float: left;
+        width: calc(100%/(12/11));
+        flex-basis: calc(100%/(12/11)); } }
+  .col-sm-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-10 {
+        float: left;
+        width: calc(100%/(12/10));
+        flex-basis: calc(100%/(12/10)); } }
+  .col-sm-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-9 {
+        float: left;
+        width: calc(100%/(12/9));
+        flex-basis: calc(100%/(12/9)); } }
+  .col-sm-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-8 {
+        float: left;
+        width: calc(100%/(12/8));
+        flex-basis: calc(100%/(12/8)); } }
+  .col-sm-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-7 {
+        float: left;
+        width: calc(100%/(12/7));
+        flex-basis: calc(100%/(12/7)); } }
+  .col-sm-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-6 {
+        float: left;
+        width: calc(100%/(12/6));
+        flex-basis: calc(100%/(12/6)); } }
+  .col-sm-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-5 {
+        float: left;
+        width: calc(100%/(12/5));
+        flex-basis: calc(100%/(12/5)); } }
+  .col-sm-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-4 {
+        float: left;
+        width: calc(100%/(12/4));
+        flex-basis: calc(100%/(12/4)); } }
+  .col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-3 {
+        float: left;
+        width: calc(100%/(12/3));
+        flex-basis: calc(100%/(12/3)); } }
+  .col-sm-2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-2 {
+        float: left;
+        width: calc(100%/(12/2));
+        flex-basis: calc(100%/(12/2)); } }
+  .col-sm-1 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 37.5625em) {
+      .col-sm-1 {
+        float: left;
+        width: calc(100%/(12/1));
+        flex-basis: calc(100%/(12/1)); } }
+  .col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-12 {
+        float: left;
+        width: calc(100%/(12/12));
+        flex-basis: calc(100%/(12/12)); } }
+  .col-md-11 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-11 {
+        float: left;
+        width: calc(100%/(12/11));
+        flex-basis: calc(100%/(12/11)); } }
+  .col-md-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-10 {
+        float: left;
+        width: calc(100%/(12/10));
+        flex-basis: calc(100%/(12/10)); } }
+  .col-md-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-9 {
+        float: left;
+        width: calc(100%/(12/9));
+        flex-basis: calc(100%/(12/9)); } }
+  .col-md-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-8 {
+        float: left;
+        width: calc(100%/(12/8));
+        flex-basis: calc(100%/(12/8)); } }
+  .col-md-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-7 {
+        float: left;
+        width: calc(100%/(12/7));
+        flex-basis: calc(100%/(12/7)); } }
+  .col-md-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-6 {
+        float: left;
+        width: calc(100%/(12/6));
+        flex-basis: calc(100%/(12/6)); } }
+  .col-md-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-5 {
+        float: left;
+        width: calc(100%/(12/5));
+        flex-basis: calc(100%/(12/5)); } }
+  .col-md-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-4 {
+        float: left;
+        width: calc(100%/(12/4));
+        flex-basis: calc(100%/(12/4)); } }
+  .col-md-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-3 {
+        float: left;
+        width: calc(100%/(12/3));
+        flex-basis: calc(100%/(12/3)); } }
+  .col-md-2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-2 {
+        float: left;
+        width: calc(100%/(12/2));
+        flex-basis: calc(100%/(12/2)); } }
+  .col-md-1 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 56.3125em) {
+      .col-md-1 {
+        float: left;
+        width: calc(100%/(12/1));
+        flex-basis: calc(100%/(12/1)); } }
+  .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-12 {
+        float: left;
+        width: calc(100%/(12/12));
+        flex-basis: calc(100%/(12/12)); } }
+  .col-lg-11 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-11 {
+        float: left;
+        width: calc(100%/(12/11));
+        flex-basis: calc(100%/(12/11)); } }
+  .col-lg-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-10 {
+        float: left;
+        width: calc(100%/(12/10));
+        flex-basis: calc(100%/(12/10)); } }
+  .col-lg-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-9 {
+        float: left;
+        width: calc(100%/(12/9));
+        flex-basis: calc(100%/(12/9)); } }
+  .col-lg-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-8 {
+        float: left;
+        width: calc(100%/(12/8));
+        flex-basis: calc(100%/(12/8)); } }
+  .col-lg-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-7 {
+        float: left;
+        width: calc(100%/(12/7));
+        flex-basis: calc(100%/(12/7)); } }
+  .col-lg-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-6 {
+        float: left;
+        width: calc(100%/(12/6));
+        flex-basis: calc(100%/(12/6)); } }
+  .col-lg-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-5 {
+        float: left;
+        width: calc(100%/(12/5));
+        flex-basis: calc(100%/(12/5)); } }
+  .col-lg-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-4 {
+        float: left;
+        width: calc(100%/(12/4));
+        flex-basis: calc(100%/(12/4)); } }
+  .col-lg-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-3 {
+        float: left;
+        width: calc(100%/(12/3));
+        flex-basis: calc(100%/(12/3)); } }
+  .col-lg-2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-2 {
+        float: left;
+        width: calc(100%/(12/2));
+        flex-basis: calc(100%/(12/2)); } }
+  .col-lg-1 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 80.0625em) {
+      .col-lg-1 {
+        float: left;
+        width: calc(100%/(12/1));
+        flex-basis: calc(100%/(12/1)); } }
+  .col-xl-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-12 {
+        float: left;
+        width: calc(100%/(12/12));
+        flex-basis: calc(100%/(12/12)); } }
+  .col-xl-11 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-11 {
+        float: left;
+        width: calc(100%/(12/11));
+        flex-basis: calc(100%/(12/11)); } }
+  .col-xl-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-10 {
+        float: left;
+        width: calc(100%/(12/10));
+        flex-basis: calc(100%/(12/10)); } }
+  .col-xl-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-9 {
+        float: left;
+        width: calc(100%/(12/9));
+        flex-basis: calc(100%/(12/9)); } }
+  .col-xl-8 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-8 {
+        float: left;
+        width: calc(100%/(12/8));
+        flex-basis: calc(100%/(12/8)); } }
+  .col-xl-7 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-7 {
+        float: left;
+        width: calc(100%/(12/7));
+        flex-basis: calc(100%/(12/7)); } }
+  .col-xl-6 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-6 {
+        float: left;
+        width: calc(100%/(12/6));
+        flex-basis: calc(100%/(12/6)); } }
+  .col-xl-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-5 {
+        float: left;
+        width: calc(100%/(12/5));
+        flex-basis: calc(100%/(12/5)); } }
+  .col-xl-4 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-4 {
+        float: left;
+        width: calc(100%/(12/4));
+        flex-basis: calc(100%/(12/4)); } }
+  .col-xl-3 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-3 {
+        float: left;
+        width: calc(100%/(12/3));
+        flex-basis: calc(100%/(12/3)); } }
+  .col-xl-2 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-2 {
+        float: left;
+        width: calc(100%/(12/2));
+        flex-basis: calc(100%/(12/2)); } }
+  .col-xl-1 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100%; }
+    @media only screen and (min-width: 100.0625em) {
+      .col-xl-1 {
+        float: left;
+        width: calc(100%/(12/1));
+        flex-basis: calc(100%/(12/1)); } }
 
 .visible-xl {
   display: none !important; }

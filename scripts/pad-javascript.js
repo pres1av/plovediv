@@ -213,6 +213,7 @@
 	    	}
     	});
     	
+    	// Set the responsive bar and menu breakpoint in ems | 1em = 16px => 900px/16px = 56.25em
 		mediaQueryList = window.matchMedia("(max-width: 56.25em)");
     
     	function widthchecker() {	
