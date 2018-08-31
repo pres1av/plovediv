@@ -29,18 +29,6 @@
 	})(window,document,'script','dataLayer','GTM-K5P7B8L');</script>
 	<!-- End Google Tag Manager -->
 	
-	<?php/*
-    =====================================
-    UNCOMMENT FOR COOKIE WARNING
-    =====================================
-    
-		<script type="text/javascript" src="<?php bloginfo('template_directory') ?>/cookie-compliance/cookie-compliance-wp.js"></script>
-		
-    <!--
-    END
-    =====================================
-    */ ?>
-	
 </head>
 <body <?php body_class(); ?>>
 	

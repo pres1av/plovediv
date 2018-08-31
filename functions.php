@@ -32,8 +32,8 @@
 		    wp_register_script( 'magnific-js', get_template_directory_uri().'/scripts/magnific-popup/dist/jquery.magnific-popup.js', $deps, null, true );
 		    
 		    //Original Lightbox Plugin 
-		    /*$deps = array('jquery');
-		    wp_register_script( 'lightbox-js', get_template_directory_uri().'/scripts/lightbox/jquery.lightbox.min.js', $deps, null, true );*/
+		    $deps = array('jquery');
+		    wp_register_script( 'lightbox-js', get_template_directory_uri().'/scripts/lightbox/jquery.lightbox.min.js', $deps, null, true );
 		    
 		    //Easing Plugin 
 		    $deps = array('jquery');
@@ -45,21 +45,26 @@
 		    
 		    //Cycle Plugin 
 		    $deps = array('jquery');
-		    wp_register_script( 'cycle2-js', get_template_directory_uri().'/scripts/jquery.cycle2.min.js', $deps, null, true );
+		    wp_register_script( 'cycle2', get_template_directory_uri().'/scripts/jquery.cycle2.min.js', $deps, null, true );
+		    
+		    //Cookie Compliance Banner
+			$deps = array(
+				'jquery'
+			);
+		    wp_register_script( 'pad-cookie-banner', get_template_directory_uri().'/scripts/cookie-compliance.js', $deps, null, true );
 
             //Pad Modules
 			$deps = array(
 				'jquery',
-				'magnific-js',
-				'slick-js'
+				'cycle2'
 			);
-		    wp_register_script( 'pad-modules-js', get_template_directory_uri().'/scripts/pad-modules.js', $deps, '1.0', true );
+		    wp_register_script( 'pad-modules', get_template_directory_uri().'/scripts/pad-modules.js', $deps, null, true );
 		    
 		    //Ajax
 			$deps = array(
 				'jquery'
 			);
-		    wp_register_script( 'ajax-load-more',  get_template_directory_uri().'/scripts/ajax-load-more.js', $deps, '1.0', true );
+		    wp_register_script( 'ajax-load-more',  get_template_directory_uri().'/scripts/ajax-load-more.js', $deps, null, true );
             
 
 			//Main Stylesheet and JS
@@ -67,51 +72,53 @@
 			wp_register_style( 'pad-theme', get_stylesheet_uri(), $deps, '1.0' );
 			$deps = array(
 				'jquery',
+				//'wp-api',
 				'magnific-js',
 				'slick-js'
 			);
 		    wp_register_script( 'pad', get_template_directory_uri().'/scripts/pad-javascript.js', $deps, null, true );
 		    
 		//Enqueue
-		
-		    //jQuery
-		    wp_enqueue_script( 'jquery' );
 		    
 		    //Slick Plugin for carousels
 		    wp_enqueue_style( 'slick-styles');
-		    wp_enqueue_script('slick-js');
 		    
 		    //Magnific Plugin for lightbox
 		    wp_enqueue_style( 'magnific-styles');
-		    wp_enqueue_script('magnific-js');
 		    
 		    //Original Lightbox Plugin
 		    //wp_enqueue_script('lightbox-js');
 		    
 		    //Easing Plugin 
-		    wp_enqueue_script( 'easing-js');
+		    //wp_enqueue_script( 'easing-js');
 		    
 		    //Parallax Plugin 
-		    wp_enqueue_script( 'parallax-js');
+		    //wp_enqueue_script( 'parallax-js');
 		    
-		    //Cycle Plugin
-		    wp_enqueue_script( 'cycle2-js');
+		    //Cookie Compliance Banner
+            //wp_enqueue_script( 'pad-cookie-banner' );
 		    
             //Pad Modules
-            wp_enqueue_script( 'pad-modules-js' );
+            wp_enqueue_script( 'pad-modules' );
             
 			//Main Stylesheet and JS
-		    wp_enqueue_script( 'ajax-load-more');
+		    //wp_enqueue_script( 'ajax-load-more');
 		    wp_enqueue_style( 'pad-theme' );
 		    wp_enqueue_script('pad');
             
+/*
             global $wp_query;           
             wp_localize_script( 'ajax-load-more', 'ajaxloadmore', array(
             	'ajaxurl' => admin_url( 'admin-ajax.php' )
             ));
-            
+*/		
+		
+		// Adding WP REST API Authentication
+        //wp_localize_script( 'wp-api', 'wpApiSettings', [ 'root' => esc_url_raw( rest_url() ), 'nonce' => wp_create_nonce( 'wp_rest' ) ] );
+        
         // Adding the site URL and template URL as a JS object. Usage in pad-javascript: wpURLs.site or wpURLs.template
-        wp_localize_script('pad', 'wpURLs', [ 'site' => home_url(), 'template' => get_bloginfo('template_directory') ]);	
+        wp_localize_script('pad', 'wpURLs', [ 'site' => home_url(), 'template' => get_bloginfo('template_directory') ]);
+        
 	    
 	}
 	
