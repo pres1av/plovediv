@@ -21,62 +21,62 @@
 			
 			//Slick Plugin for carousels
 		    $deps = array();
-			wp_register_style( 'slick-styles',get_template_directory_uri().'/scripts/slick-1.6.0/slick/slick.css', $deps, null );
+			wp_register_style( 'slick-styles',get_template_directory_uri().'/scripts/slick-1.6.0/slick/slick.css', $deps );
 		    $deps = array('jquery');
-		    wp_register_script( 'slick-js', get_template_directory_uri().'/scripts/slick-1.6.0/slick/slick.min.js', $deps, null, true );
+		    wp_register_script( 'slick-js', get_template_directory_uri().'/scripts/slick-1.6.0/slick/slick.min.js', $deps, false, true );
 		
 		    //Magnific Plugin for lightbox
 		    $deps = array();
-			wp_register_style( 'magnific-styles',get_template_directory_uri().'/scripts/magnific-popup/dist/magnific-popup.css', $deps, null );
+			wp_register_style( 'magnific-styles',get_template_directory_uri().'/scripts/magnific-popup/dist/magnific-popup.css', $deps );
 		    $deps = array('jquery');
-		    wp_register_script( 'magnific-js', get_template_directory_uri().'/scripts/magnific-popup/dist/jquery.magnific-popup.js', $deps, null, true );
+		    wp_register_script( 'magnific-js', get_template_directory_uri().'/scripts/magnific-popup/dist/jquery.magnific-popup.js', $deps, false, true );
 		    
 		    //Original Lightbox Plugin 
 		    $deps = array('jquery');
-		    wp_register_script( 'lightbox-js', get_template_directory_uri().'/scripts/lightbox/jquery.lightbox.min.js', $deps, null, true );
+		    wp_register_script( 'lightbox-js', get_template_directory_uri().'/scripts/lightbox/jquery.lightbox.min.js', $deps, false, true );
 		    
 		    //Easing Plugin 
 		    $deps = array('jquery');
-		    wp_register_script( 'easing-js', get_template_directory_uri().'/scripts/jquery.easing.1.3.js', $deps, null, true );
+		    wp_register_script( 'easing-js', get_template_directory_uri().'/scripts/jquery.easing.1.3.js', $deps, false, true );
 		    
 		    //Parallax Plugin 
 		    $deps = array('jquery');
-		    wp_register_script( 'parallax-js', get_template_directory_uri().'/scripts/parallax.min.js', $deps, null, true );
+		    wp_register_script( 'parallax-js', get_template_directory_uri().'/scripts/parallax.min.js', $deps, false, true );
 		    
 		    //Cycle Plugin 
 		    $deps = array('jquery');
-		    wp_register_script( 'cycle2', get_template_directory_uri().'/scripts/jquery.cycle2.min.js', $deps, null, true );
+		    wp_register_script( 'cycle2', get_template_directory_uri().'/scripts/jquery.cycle2.min.js', $deps, false, true );
 		    
 		    //Cookie Compliance Banner
 			$deps = array(
 				'jquery'
 			);
-		    wp_register_script( 'pad-cookie-banner', get_template_directory_uri().'/scripts/cookie-compliance.js', $deps, null, true );
+		    wp_register_script( 'pad-cookie-banner', get_template_directory_uri().'/scripts/cookie-compliance.js', $deps, false, true );
 
             //Pad Modules
 			$deps = array(
 				'jquery',
 				'cycle2'
 			);
-		    wp_register_script( 'pad-modules', get_template_directory_uri().'/scripts/pad-modules.js', $deps, null, true );
+		    wp_register_script( 'pad-modules', get_template_directory_uri().'/scripts/pad-modules.js', $deps, false, true );
 		    
 		    //Ajax
 			$deps = array(
 				'jquery'
 			);
-		    wp_register_script( 'ajax-load-more',  get_template_directory_uri().'/scripts/ajax-load-more.js', $deps, null, true );
+		    wp_register_script( 'ajax-load-more',  get_template_directory_uri().'/scripts/ajax-load-more.js', $deps, false, true );
             
 
 			//Main Stylesheet and JS
 			$deps = array();
-			wp_register_style( 'pad-theme', get_stylesheet_uri(), $deps, '1.0' );
+			wp_register_style( 'pad-theme', get_stylesheet_uri(), $deps );
 			$deps = array(
 				'jquery',
 				//'wp-api',
 				'magnific-js',
 				'slick-js'
 			);
-		    wp_register_script( 'pad', get_template_directory_uri().'/scripts/pad-javascript.js', $deps, null, true );
+		    wp_register_script( 'pad', get_template_directory_uri().'/scripts/pad-javascript.js', $deps, false, true );
 		    
 		//Enqueue
 		    
