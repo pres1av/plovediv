@@ -32,6 +32,10 @@
 	}
 }
 
+[class*="col-"] {
+	flex-basis: 100%;
+}
+
 .col {
 	flex: 1;
   

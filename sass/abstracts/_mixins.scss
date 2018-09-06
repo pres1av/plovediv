@@ -60,10 +60,6 @@
 	min-height: 1px;
 	padding-left: 15px;
 	padding-right: 15px;
-	
-	@if $flex {
-		flex-basis: 100%;
-	}
   
 	@media only screen and (min-width: map-get($breakpoints, $breakpoint) + 0.0625) {
     	float: left;
